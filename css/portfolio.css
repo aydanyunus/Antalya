@@ -1,0 +1,853 @@
+@font-face {
+  font-family: "Gotham";
+  src: url(../fonts/Gotham-Black);
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+header,
+footer {
+  width: 100%;
+}
+
+#portfolio {
+  padding-bottom: 100px;
+  padding-top: 15px;
+  position: relative;
+  background: url("../images/portfolio/Group2.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#portfolio .portfolio__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#portfolio .portfolio__wrapper .left {
+  width: 70%;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__top .portfolio__title h1 {
+  font-size: 55px;
+  opacity: 0.3;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #fb7d76;
+  margin-bottom: -32px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__top .portfolio__title h2 {
+  position: relative;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__top .portfolio__title h6 {
+  font-size: 16px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__top .filter__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__top .filter__btns button {
+  background: #3259fc;
+  opacity: 0.3;
+  border: none;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__top .filter__btns button svg {
+  width: 18px;
+  height: 18px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__top .filter__btns .btn__grid {
+  margin-right: 8px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__top .filter__btns .nav-link.active {
+  background: #3259fc;
+  opacity: 1;
+  position: relative;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__top .nav-tabs {
+  border-bottom: 0;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom {
+  margin-top: 41px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item {
+  width: 31%;
+  margin-bottom: 31px;
+  border-radius: 15px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 5px 19px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 5px 19px rgba(0, 0, 0, 0.3);
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .img__holder {
+  position: relative;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .img__holder img {
+  max-width: 100%;
+  width: 100%;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .img__holder .img__info {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 12px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .img__holder .img__info .bookmark {
+  background: #3259fc;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .img__holder .img__info .bookmark .price__info h6 {
+  font-size: 11px;
+  color: #ffffff;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .img__holder .img__info .bookmark .price__info .sale__price,
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .img__holder .img__info .bookmark .price__info .old__price {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .img__holder .img__info .bookmark .price__info .sale__price svg,
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .img__holder .img__info .bookmark .price__info .old__price svg {
+  width: 10px;
+  height: 11px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .img__holder .img__info .bookmark .price__info .sale__price {
+  font-size: 16px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .img__holder .img__info .bookmark .price__info .sale__price svg {
+  fill: #ffffff;
+  opacity: 1;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .img__holder .img__info .bookmark .price__info .old__price {
+  font-size: 12px;
+  text-decoration: line-through;
+  color: #9aadfd;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .img__holder .img__info .bookmark .price__info .old__price svg {
+  fill: #9aadfd;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .img__holder .img__info svg {
+  width: 23px;
+  height: 29px;
+  opacity: 0.45;
+  fill: #001136;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .img__holder .img__info .fav {
+  width: 31px;
+  height: 38px;
+  fill: #fb7d76;
+  opacity: 1;
+  position: relative;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .house__info {
+  margin-top: 11px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .house__info .place {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #001136;
+  min-height: 52px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .house__info .place h5 {
+  font-size: 20px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .house__info .place h6 {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .house__info .place h6 svg {
+  width: 24px;
+  height: 26px;
+  margin-left: 8px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .house__info .details {
+  margin-top: 13px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .house__info .details ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .house__info .details ul li {
+  margin-right: 28px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .house__info .details ul li span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #001136;
+  opacity: 0.45;
+  font-size: 14px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .house__info .details ul li span svg {
+  width: 17px;
+  height: 16px;
+  margin-right: 3px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .house__info .details ul li h6 {
+  font-size: 16px;
+  color: #001136;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item__active {
+  border: 0.5px solid #3259fc;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item {
+  background: #ffffff;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  padding: 11px;
+  -webkit-box-shadow: 0px 5px 19px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 5px 19px rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .image__wrapper img {
+  max-width: 100%;
+  width: 181px;
+  height: 130px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info {
+  margin-top: 11px;
+  padding: 0 10px 0 24px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .place {
+  color: #001136;
+  min-height: 52px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .place h5 {
+  font-size: 22px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .place h6 {
+  margin-top: 16px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .place h6 svg {
+  width: 20px;
+  height: 20px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .details {
+  margin-top: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .details ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .details ul li {
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .details ul li span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #001136;
+  opacity: 0.45;
+  font-size: 14px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .details ul li span svg {
+  width: 17px;
+  height: 16px;
+  margin-right: 3px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .details ul li h6 {
+  font-size: 16px;
+  color: #001136;
+  margin-left: 12px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .details .price__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .details .price__info .sale__price, #portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .details .price__info .old__price {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .details .price__info .sale__price {
+  font-size: 24px;
+  color: #3259fc;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .details .price__info .sale__price svg {
+  fill: #3259fc;
+  width: 17px;
+  height: 19px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .details .price__info .old__price {
+  font-size: 17px;
+  text-decoration: line-through;
+  color: #001136;
+  opacity: 0.5;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .details .price__info .old__price svg {
+  fill: #001136;
+  width: 10px;
+  height: 11px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .bookmark {
+  position: absolute;
+  top: 0;
+  right: 23px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .bookmark svg {
+  opacity: 0.3;
+  width: 29px;
+  height: 36px;
+  cursor: pointer;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .bookmark .fav {
+  opacity: 1;
+  fill: #fb7d76;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item__active {
+  border: 0.5px solid #3259fc;
+}
+
+#portfolio .portfolio__wrapper .left .page__navigation {
+  margin-top: 38px;
+}
+
+#portfolio .portfolio__wrapper .left .page__navigation .pagination {
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#portfolio .portfolio__wrapper .left .page__navigation .pagination .page__item {
+  padding: 3px;
+}
+
+#portfolio .portfolio__wrapper .left .page__navigation .pagination .page__item .page__link {
+  color: #001136;
+  opacity: 0.3;
+  font-size: 17px;
+}
+
+#portfolio .portfolio__wrapper .left .page__navigation .pagination .page__item .page__link span svg {
+  width: 16px;
+  height: 11px;
+}
+
+#portfolio .portfolio__wrapper .left .page__navigation .pagination .page__item .page-link__active {
+  color: #fb7d76;
+  opacity: 1;
+}
+
+#portfolio .portfolio__wrapper .left .page__navigation .pagination .arrow__left,
+#portfolio .portfolio__wrapper .left .page__navigation .pagination .arrow__right {
+  border: 1px solid #001136;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#portfolio .portfolio__wrapper .left .page__navigation .pagination .arrow__left .page__link,
+#portfolio .portfolio__wrapper .left .page__navigation .pagination .arrow__right .page__link {
+  position: relative;
+  opacity: 1;
+}
+
+#portfolio .portfolio__wrapper .left .page__navigation .pagination .arrow__left {
+  margin-right: 40px;
+}
+
+#portfolio .portfolio__wrapper .left .page__navigation .pagination .arrow__right {
+  margin-left: 40px;
+  background: #001136;
+}
+
+#portfolio .portfolio__wrapper .right {
+  width: 30%;
+  margin-left: 37px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper {
+  background: #f4f6ff;
+  border-radius: 15px;
+  padding: 19px 34px;
+  color: #001136;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter h4 {
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .rent__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .rent__filter .rent__filter__item {
+  width: 120px;
+  height: 78px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.16);
+  background: #ffffff;
+  margin-bottom: 10px;
+  padding: 6px 9px 9px 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .rent__filter .rent__filter__item h5 {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .rent__filter .rent__filter__item div {
+  position: relative;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .rent__filter .rent__filter__item div::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 38px;
+  height: 38px;
+  background: #fb7d76;
+  border-radius: 50px;
+  opacity: 0.15;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .rent__filter .rent__filter__item div svg {
+  width: 43px;
+  height: 43px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .rent__filter .rent__filter__item__active {
+  background: #3259fc;
+  color: #ffffff;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .rent__filter .rent__filter__item__active div::after {
+  background: #ffffff;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .rent__filter .rent__filter__item__active div svg {
+  fill: #ffffff;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .property__type h4,
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .location h4,
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .rooms h4,
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .price__range h4,
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .metr__range h4 {
+  color: #001136;
+  font-size: 14px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .rooms .number__of__rooms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .rooms .number__of__rooms span {
+  cursor: pointer;
+  border: 1px solid #001136;
+  opacity: 0.3;
+  border-radius: 15px;
+  padding: 6px;
+  font-size: 16px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .rooms .number__of__rooms .selected__room {
+  position: relative;
+  opacity: 1;
+  background: #3259fc;
+  color: #ffffff;
+  border: none;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .search__btn {
+  border-radius: 12px;
+  border: none;
+  background: #3259fc;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .search__btn a {
+  font-size: 14px;
+  color: #ffffff;
+  padding: 13px;
+}
+
+#portfolio .live__chat {
+  position: absolute;
+  bottom: 100px;
+  right: 20px;
+  background: #3259fc;
+  border-radius: 10px;
+  border: none;
+  padding: 8px 6px 8px 6px;
+}
+
+#portfolio .live__chat a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#portfolio .live__chat a svg {
+  width: 29px;
+  height: 25px;
+}
+
+#portfolio .mobile__nav {
+  background: #ffffff;
+  position: absolute;
+  width: 100%;
+  bottom: 80px;
+  left: 0;
+  display: none;
+}
+
+#portfolio .mobile__nav .nav__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+#portfolio .mobile__nav .nav__wrapper button {
+  border: none;
+  background: none;
+}
+
+#portfolio .mobile__nav .nav__wrapper button a {
+  display: block;
+  color: #3259fc;
+  opacity: 0.3;
+}
+
+#portfolio .mobile__nav .nav__wrapper button svg {
+  width: 23px;
+  height: 23px;
+  fill: #3259fc;
+  opacity: 0.3;
+}
+
+#portfolio .mobile__nav .nav__wrapper .active a {
+  color: #3259fc;
+  opacity: 1;
+}
+
+#portfolio .mobile__nav .nav__wrapper .active svg {
+  fill: #3259fc;
+  opacity: 1;
+}
+
+@media (max-width: 1199.98px) {
+  .right .rent__filter__item {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .portfolio__wrapper {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .portfolio__wrapper .left,
+  .portfolio__wrapper .right {
+    width: 100% !important;
+  }
+  .portfolio__wrapper .left .houses .house__item {
+    width: 100% !important;
+  }
+  .portfolio__wrapper .left .pagination {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolio__wrapper .right {
+    margin-top: 50px;
+    margin-left: 0 !important;
+  }
+  .portfolio__wrapper .right .rent__filter {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .portfolio__wrapper .right .rent__filter .rent__filter__item {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .filter__btns,
+  .right {
+    display: none !important;
+  }
+  .live__chat {
+    bottom: 75% !important;
+  }
+  .mobile__nav {
+    bottom: 79% !important;
+  }
+}
+/*# sourceMappingURL=portfolio.css.map */
