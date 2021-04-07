@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15.219" height="15.204" viewBox="0 0 15.219 15.204">
+  <g id="phone-call" transform="translate(0.114 0.1)">
+    <g id="Group_49" data-name="Group 49" transform="translate(0 4.162)">
+      <g id="Group_48" data-name="Group 48" transform="translate(0)">
+        <path id="Path_75" data-name="Path 75" d="M10.541,149.851l-1.392-1.392a1.032,1.032,0,0,0-1.457,0l-.612.612A7.783,7.783,0,0,1,3.8,145.793l.612-.612a1.032,1.032,0,0,0,0-1.457l-1.392-1.392a1.032,1.032,0,0,0-1.457,0L.451,143.446c-.582.582-.6,1.608-.051,2.889a12.073,12.073,0,0,0,2.558,3.581,12.073,12.073,0,0,0,3.581,2.558,4.321,4.321,0,0,0,1.661.4,1.673,1.673,0,0,0,1.228-.45l1.114-1.114a1.03,1.03,0,0,0,0-1.457Zm-.622.835L8.805,151.8c-.3.3-1.02.251-1.921-.135a11.187,11.187,0,0,1-3.306-2.371,11.187,11.187,0,0,1-2.371-3.306c-.386-.9-.437-1.619-.135-1.921l1.114-1.114a.151.151,0,0,1,.214,0l1.392,1.392a.151.151,0,0,1,0,.214l-1.055,1.055.133.28A8.659,8.659,0,0,0,6.978,150l.28.133,1.055-1.055a.151.151,0,0,1,.214,0l1.392,1.392a.151.151,0,0,1,0,.214Z" transform="translate(0 -142.03)" fill="#fff" stroke="#fff" stroke-width="0.2"/>
+      </g>
+    </g>
+    <g id="Group_51" data-name="Group 51" transform="translate(5.919 0)">
+      <g id="Group_50" data-name="Group 50" transform="translate(0 0)">
+        <path id="Path_76" data-name="Path 76" d="M209.7,1.136a5.04,5.04,0,0,0-6.375,0,3.7,3.7,0,0,0-1.355,2.821,3.7,3.7,0,0,0,1.355,2.821,4.487,4.487,0,0,0,.5.369A7.493,7.493,0,0,1,202.7,8.471a7.406,7.406,0,0,0,2.591-.7,5.208,5.208,0,0,0,1.219.143A4.884,4.884,0,0,0,209.7,6.777a3.7,3.7,0,0,0,1.355-2.821A3.7,3.7,0,0,0,209.7,1.136Zm-3.187,5.9a3.413,3.413,0,0,1-3.663-3.077,3.719,3.719,0,0,1,7.327,0A3.413,3.413,0,0,1,206.51,7.034Z" transform="translate(-201.967 0)" fill="#fff" stroke="#fff" stroke-width="0.2"/>
+      </g>
+    </g>
+    <g id="Group_53" data-name="Group 53" transform="translate(9.876 3.37)">
+      <g id="Group_52" data-name="Group 52">
+        <circle id="Ellipse_9" data-name="Ellipse 9" cx="0.586" cy="0.586" r="0.586" fill="#fff" stroke="#fff" stroke-width="0.2"/>
+      </g>
+    </g>
+    <g id="Group_55" data-name="Group 55" transform="translate(7.824 3.37)">
+      <g id="Group_54" data-name="Group 54">
+        <circle id="Ellipse_10" data-name="Ellipse 10" cx="0.586" cy="0.586" r="0.586" fill="#fff" stroke="#fff" stroke-width="0.2"/>
+      </g>
+    </g>
+    <g id="Group_57" data-name="Group 57" transform="translate(11.927 3.37)">
+      <g id="Group_56" data-name="Group 56">
+        <circle id="Ellipse_11" data-name="Ellipse 11" cx="0.586" cy="0.586" r="0.586" fill="#fff" stroke="#fff" stroke-width="0.2"/>
+      </g>
+    </g>
+  </g>
+</svg>
