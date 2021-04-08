@@ -192,6 +192,12 @@ a:hover {
 
 #who__are__we {
   padding: 24px 0 94px 0;
+  background: url("../images/about/Group112.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #who__are__we .item {
@@ -607,6 +613,9 @@ a:hover {
   }
   #about .mobile__nav {
     display: block !important;
+  }
+  #who__are__we {
+    background: url("../images/about/Group113.png");
   }
 }
 

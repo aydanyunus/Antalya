@@ -455,7 +455,8 @@ footer {
           align-items: flex-end;
 }
 
-#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .details .price__info .sale__price, #portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .details .price__info .old__price {
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .details .price__info .sale__price,
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .details .price__info .old__price {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -668,6 +669,92 @@ footer {
   font-size: 14px;
 }
 
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .property__type .dropdown,
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .location .dropdown {
+  width: 100%;
+  font-size: 14px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .property__type .dropdown .dropdown-toggle,
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .location .dropdown .dropdown-toggle {
+  padding: 14px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #3259fc;
+  background: #ffffff;
+  border: none;
+  border-radius: 12px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .property__type .dropdown.show .btn__property,
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .location .dropdown.show .btn__property {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .property__type .dropdown-menu,
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .location .dropdown-menu {
+  padding: 11px 15px 15px 15px;
+  width: 100%;
+  border: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  -webkit-transform: translate3d(0px, 50px, 0px) !important;
+          transform: translate3d(0px, 50px, 0px) !important;
+  border-top: 0.5px solid rgba(0, 17, 54, 0.3);
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .property__type .dropdown-menu .dropdown-item,
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .location .dropdown-menu .dropdown-item {
+  padding: 0;
+  margin-bottom: 19px;
+  color: #001136;
+  opacity: 0.45;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .property__type .dropdown-menu .dropdown-item:hover,
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .location .dropdown-menu .dropdown-item:hover {
+  background: transparent;
+  color: #001136;
+  opacity: 1;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .property__type .dropdown-menu .dropdown-item:last-child,
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .location .dropdown-menu .dropdown-item:last-child {
+  margin-bottom: 0;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .property__type .dropdown-menu .dropdown-item svg,
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .location .dropdown-menu .dropdown-item svg {
+  width: 24px;
+  height: 26px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .property__type {
+  margin-top: 39px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .location {
+  margin-top: 32px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .rooms {
+  margin-top: 28px;
+}
+
 #portfolio .portfolio__wrapper .right .filter__wrapper .filter .rooms .number__of__rooms {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -694,7 +781,16 @@ footer {
   border: none;
 }
 
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .price__range {
+  margin-top: 28px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .metr__range {
+  margin-top: 30px;
+}
+
 #portfolio .portfolio__wrapper .right .filter__wrapper .filter .search__btn {
+  margin-top: 39px;
   border-radius: 12px;
   border: none;
   background: #3259fc;
