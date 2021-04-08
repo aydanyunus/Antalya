@@ -39,14 +39,11 @@ footer {
   padding-bottom: 100px;
   padding-top: 15px;
   position: relative;
-
   background: url("../images/portfolio/Group2.png");
   width: 100%;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-
-
   .portfolio__wrapper {
     display: flex;
     flex-direction: row;
@@ -655,7 +652,6 @@ footer {
     bottom: 75% !important;
   }
   .mobile__nav {
-
     // display: block !important;
     bottom: 79% !important;
   }
