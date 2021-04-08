@@ -93,16 +93,4 @@ function myFunction() {
   console.log(nodelist);
 }
 
-$(function () {
-  $(".section-second--item").hover(function () {
-    // when a .myDiv is clicked
-    $("svg").toggleClass("svghover");
-  });
 
-  $(".header-mobile-burger").click(function () {
-    $(".mobile-header--nav").toggleClass("active-hide-mobile");
-  });
-  $(".nav__wrapper button").click(function () {
-    $(this).addClass("active-wrapper-nav");
-  });
-});
