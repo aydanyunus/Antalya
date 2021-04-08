@@ -48,6 +48,7 @@ footer {
   padding-bottom: 100px;
   padding-top: 15px;
   position: relative;
+
   background: url("../images/portfolio/Group2.png");
   width: 100%;
   height: 100%;
@@ -299,7 +300,9 @@ footer {
 }
 
 #portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .house__info .details ul li {
+
   margin-right: 28px;
+
 }
 
 #portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .house__info .details ul li span {
@@ -340,6 +343,7 @@ footer {
           justify-content: space-between;
 }
 
+
 #portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item {
   background: #ffffff;
   position: relative;
@@ -347,12 +351,14 @@ footer {
   margin-bottom: 20px;
   border-radius: 15px;
   padding: 11px;
+
   -webkit-box-shadow: 0px 5px 19px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 5px 19px rgba(0, 0, 0, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+
 
 #portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .image__wrapper img {
   max-width: 100%;
@@ -366,6 +372,7 @@ footer {
 }
 
 #portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .place {
+
   color: #001136;
   min-height: 52px;
   -webkit-box-align: center;
@@ -373,12 +380,14 @@ footer {
           align-items: center;
 }
 
+
 #portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .place h5 {
   font-size: 22px;
 }
 
 #portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .place h6 {
   margin-top: 16px;
+
   font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -404,11 +413,13 @@ footer {
 }
 
 #portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .details ul {
+
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 0;
+
   margin-top: 15px;
 }
 
@@ -423,6 +434,7 @@ footer {
 }
 
 #portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .details ul li span {
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,11 +446,14 @@ footer {
   font-size: 14px;
 }
 
+
 #portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .details ul li span svg {
+
   width: 17px;
   height: 16px;
   margin-right: 3px;
 }
+
 
 #portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item .house__info .details ul li h6 {
   font-size: 16px;
@@ -509,6 +524,7 @@ footer {
 }
 
 #portfolio .portfolio__wrapper .left .portfolio__bottom .houses__list__view.active .house__list__item__active {
+
   border: 0.5px solid #3259fc;
 }
 
@@ -646,6 +662,7 @@ footer {
   height: 43px;
 }
 
+
 #portfolio .portfolio__wrapper .right .filter__wrapper .filter .rent__filter .rent__filter__item__active {
   background: #3259fc;
   color: #ffffff;
@@ -658,6 +675,7 @@ footer {
 #portfolio .portfolio__wrapper .right .filter__wrapper .filter .rent__filter .rent__filter__item__active div svg {
   fill: #ffffff;
 }
+
 
 #portfolio .portfolio__wrapper .right .filter__wrapper .filter .property__type h4,
 #portfolio .portfolio__wrapper .right .filter__wrapper .filter .location h4,
@@ -847,6 +865,8 @@ footer {
     bottom: 75% !important;
   }
   .mobile__nav {
+
+
     bottom: 79% !important;
   }
 }

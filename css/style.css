@@ -63,6 +63,8 @@
   background-image: url(../images/main-background.png);
   background-repeat: no-repeat;
   background-position: center;
+
+
 }
 
 .header-navbar {
@@ -127,6 +129,7 @@
 .header-navbar .change-language .dropdown.show a {
   background-color: #ffffff;
 }
+
 
 .header-navbar .change-language .dropdown-toggle {
   border: none;
@@ -350,6 +353,7 @@
   cursor: pointer;
 }
 
+
 .header .live__chat {
   position: absolute;
   bottom: 100px;
@@ -375,6 +379,7 @@
 .header .live__chat a svg {
   width: 29px;
   height: 25px;
+
 }
 
 .sectionsecond-title {
@@ -441,6 +446,7 @@
   padding-top: 50px;
   padding-bottom: 138px;
   position: relative;
+
   z-index: 3;
 }
 
@@ -471,6 +477,7 @@
 
 .sectionsecond .animation-img img {
   max-width: 100%;
+
   position: absolute;
 }
 
@@ -616,6 +623,7 @@
   height: 100%;
 }
 
+
 .section-third .slick-dots li {
   color: #001136;
   opacity: 0.3;
@@ -637,6 +645,7 @@
 
 .section-fourth {
   overflow: hidden;
+
   padding-top: 136px;
 }
 
@@ -716,6 +725,7 @@
   letter-spacing: normal;
   line-height: 30px;
   text-align: left;
+
 }
 
 .section-fourth .section-clients .item .item-description span {
@@ -738,6 +748,7 @@
   letter-spacing: normal;
   line-height: 26px;
   text-align: left;
+
 }
 
 .section-fourth .section-clients .owl-stage {
@@ -758,6 +769,7 @@
 
 footer {
   background-color: #001136;
+
   position: relative;
   width: 100%;
   height: 100%;
@@ -777,6 +789,7 @@ footer::before {
 
 footer .footer {
   position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -882,15 +895,18 @@ footer .footer-item .footer-copyright {
   .section-second--item p {
     width: 100% !important;
   }
+
   .sectionsecond::after {
     content: none;
   }
+
   .animation-img {
     display: none;
   }
   .section-second--item .item-about a {
     padding: 5px 10px !important;
   }
+
   footer::before {
     background-size: 100% 100%;
   }
@@ -942,11 +958,13 @@ footer .footer-item .footer-copyright {
   }
 }
 
+
 @media (max-width: 575px) {
   footer::before {
     background: url("../images/MaskGroup3.png");
     background-repeat: no-repeat;
     background-size: cover;
+
   }
 }
 /*# sourceMappingURL=style.css.map */

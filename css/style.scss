@@ -22,6 +22,7 @@ $secondmain-color: #fb7d76;
   }
 }
 
+
 //others css
 /* width */
 ::-webkit-scrollbar {
@@ -67,6 +68,8 @@ $secondmain-color: #fb7d76;
   background-image: url(../images/main-background.png);
   background-repeat: no-repeat;
   background-position: center;
+
+
   &-navbar {
     display: flex;
     align-items: center;
@@ -120,6 +123,7 @@ $secondmain-color: #fb7d76;
           background-color: #ffffff;
         }
       }
+
       .dropdown-toggle {
         border: none;
         border-top-left-radius: 10px;
@@ -165,6 +169,7 @@ $secondmain-color: #fb7d76;
           opacity: 1;
         }
       }
+
     }
     .login {
       a {
@@ -305,6 +310,7 @@ $secondmain-color: #fb7d76;
       }
     }
   }
+
   .live__chat {
     position: absolute;
     bottom: 100px;
@@ -323,6 +329,7 @@ $secondmain-color: #fb7d76;
       }
     }
   }
+
 }
 //section2
 .sectionsecond-title {
@@ -378,6 +385,7 @@ $secondmain-color: #fb7d76;
   padding-top: 50px;
   padding-bottom: 138px;
   position: relative;
+
   z-index: 3;
   &::before {
     content: '';
@@ -405,6 +413,7 @@ $secondmain-color: #fb7d76;
   .animation-img {
     img {
       max-width: 100%;
+
       position: absolute;
     }
   }
@@ -420,6 +429,8 @@ $secondmain-color: #fb7d76;
       padding-top: 116px;
       padding-right: 58px;
       flex-direction: row-reverse;
+
+
 
       .item-about {
         display: flex;
@@ -518,6 +529,7 @@ $secondmain-color: #fb7d76;
     width: 100%;
     height: 100%;
   }
+
   
   .slick-dots {
     li {
@@ -540,6 +552,7 @@ $secondmain-color: #fb7d76;
 //section4
 .section-fourth {
   overflow: hidden;
+
   padding-top: 136px;
   .section-title {
     display: flex;
@@ -606,6 +619,8 @@ $secondmain-color: #fb7d76;
           letter-spacing: normal;
           line-height: 30px;
           text-align: left;
+
+
         }
         span {
           opacity: 0.45;
@@ -626,6 +641,8 @@ $secondmain-color: #fb7d76;
           letter-spacing: normal;
           line-height: 26px;
           text-align: left;
+
+
         }
       }
     }
@@ -644,6 +661,7 @@ $secondmain-color: #fb7d76;
 //footer
 footer {
   background-color: #001136;
+
   position: relative;
   width: 100%;
   height: 100%;
@@ -660,6 +678,7 @@ footer {
   }
   .footer {
     position: relative;
+
     display: flex;
     justify-content: space-between;
     padding: 28px 0;
@@ -759,26 +778,32 @@ footer {
       width: 100% !important;
     }
   }
+
   .sectionsecond {
     &::after {
       content: none;
     }
   }
+
   .animation-img {
     display: none;
   }
   .section-second--item .item-about a {
     padding: 5px 10px !important;
   }
+
   footer {
     &::before {
       background-size: 100% 100%;
     }
   }
+
   .footer {
     padding: 60px 0 90px 0 !important;
     flex-direction: column !important;
     position: relative;
+
+
 
     .footer-item {
       &:last-child {
@@ -821,11 +846,13 @@ footer {
   }
 }
 @media (max-width: 575px) {
+
   footer {
     &::before {
       background: url('../images/MaskGroup3.png');
       background-repeat: no-repeat;
       background-size: cover;
     }
+
   }
 }

@@ -92,3 +92,5 @@ function myFunction() {
   var nodelist = document.getElementsByClassName("main-img").length;
   console.log(nodelist);
 }
+
+
