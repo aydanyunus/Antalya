@@ -869,6 +869,7 @@ footer .footer-item .footer-contacts svg {
   width: 14px;
   height: 17px;
   margin-right: 12px;
+  fill: #ffffff;
 }
 
 footer .footer-item .footer-social {
@@ -891,6 +892,9 @@ footer .footer-item .footer-copyright {
 }
 
 @media (max-width: 991.98px) {
+  .header-filter {
+    display: none;
+  }
   .section-title {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -910,8 +914,8 @@ footer .footer-item .footer-copyright {
   .sectionsecond::after {
     content: none;
   }
-  .animation-img {
-    display: none;
+  .animation-img img {
+    width: 100% !important;
   }
   .section-second--item .item-about a {
     padding: 5px 10px !important;
