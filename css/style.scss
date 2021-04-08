@@ -411,9 +411,29 @@ $secondmain-color: #fb7d76;
     background-size: cover;
   }
   .animation-img {
+    svg {
+      width: 30px;
+      height: 30px;
+      fill: #3259fc;
+    }
+    .animation-img-first {
+      top: 3.3%;
+      left: 12%;
+      position: absolute;
+    }
+    .animation-img-second {
+      top: 42%;
+      position: absolute;
+      left: 91.5%;
+      z-index: 9;
+    }
+    .animation-img-third {
+      top: 66%;
+      position: absolute;
+      left: 14%;
+      z-index: 9;
+    }
     img {
-      max-width: 100%;
-
       position: absolute;
     }
   }
