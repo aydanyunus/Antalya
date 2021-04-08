@@ -764,6 +764,7 @@ footer {
           width: 14px;
           height: 17px;
           margin-right: 12px;
+          fill: #ffffff;
         }
       }
       .footer-social {
@@ -785,6 +786,9 @@ footer {
 @media (max-width: 1199.98px) {
 }
 @media (max-width: 991.98px) {
+  .header-filter {
+    display: none;
+  }
   .section-title {
     flex-direction: column !important;
     h2,
@@ -798,26 +802,24 @@ footer {
       width: 100% !important;
     }
   }
-
   .sectionsecond {
     &::after {
       content: none;
     }
   }
-
   .animation-img {
-    display: none;
+    img {
+      width: 100% !important;
+    }
   }
   .section-second--item .item-about a {
     padding: 5px 10px !important;
   }
-
   footer {
     &::before {
       background-size: 100% 100%;
     }
   }
-
   .footer {
     padding: 60px 0 90px 0 !important;
     flex-direction: column !important;
