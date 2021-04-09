@@ -17,3 +17,8 @@ $(".rent__filter .rent__filter__item").on("click", function () {
     $(this).addClass("rent__filter__item__active");
 });
 
+// fav 
+
+$(".img__info svg").click(function(){
+    $(this).toggleClass("fav");
+  });
