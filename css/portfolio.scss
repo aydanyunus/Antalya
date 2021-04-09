@@ -126,8 +126,24 @@ footer {
                 justify-content: space-between;
                 padding: 0 12px;
                 .bookmark {
-                  background: #3259fc;
+                  // background: #3259fc;
+                  position: relative;
+                  .ribbon__svg {
+                    position: absolute;
+                    left: -12px;
+                    top: -8px;
+                    svg {
+                      width: 113px;
+                      height: 75px;
+                      opacity: 1;
+                    }
+                  }
                   .price__info {
+                    position: absolute;
+                    left: 10px;
+                    top: 0;
+                    max-width: 113px;
+                    max-height: 75px;
                     h6 {
                       font-size: 11px;
                       color: #ffffff;
@@ -504,6 +520,10 @@ footer {
                 border-radius: 12px;
                 box-shadow: none;
                 outline: none;
+                svg {
+                  width: 24px;
+                  height: 26px;
+                }
               }
             }
             .dropdown.show {
@@ -566,13 +586,15 @@ footer {
                 position: relative;
                 opacity: 1;
                 background: #3259fc;
-                color: #ffffff;
                 border: none;
+                border: 0.5px solid #3259fc;
+                color: #ffffff;
               }
             }
           }
           .price__range {
             margin-top: 28px;
+       
           }
           .metr__range {
             margin-top: 30px;
