@@ -189,7 +189,27 @@ footer {
 }
 
 #portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .img__holder .img__info .bookmark {
-  background: #3259fc;
+  position: relative;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .img__holder .img__info .bookmark .ribbon__svg {
+  position: absolute;
+  left: -12px;
+  top: -8px;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .img__holder .img__info .bookmark .ribbon__svg svg {
+  width: 113px;
+  height: 75px;
+  opacity: 1;
+}
+
+#portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .img__holder .img__info .bookmark .price__info {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  max-width: 113px;
+  max-height: 75px;
 }
 
 #portfolio .portfolio__wrapper .left .portfolio__bottom .houses.show.active .house__item .img__holder .img__info .bookmark .price__info h6 {
@@ -697,6 +717,12 @@ footer {
   outline: none;
 }
 
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .property__type .dropdown .dropdown-toggle svg,
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .location .dropdown .dropdown-toggle svg {
+  width: 24px;
+  height: 26px;
+}
+
 #portfolio .portfolio__wrapper .right .filter__wrapper .filter .property__type .dropdown.show .btn__property,
 #portfolio .portfolio__wrapper .right .filter__wrapper .filter .location .dropdown.show .btn__property {
   border-bottom-left-radius: 0;
@@ -777,16 +803,87 @@ footer {
   position: relative;
   opacity: 1;
   background: #3259fc;
-  color: #ffffff;
   border: none;
+  border: 0.5px solid #3259fc;
+  color: #ffffff;
 }
 
 #portfolio .portfolio__wrapper .right .filter__wrapper .filter .price__range {
   margin-top: 28px;
+  padding-bottom: 20px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .price__range #slider-range-2 {
+  background: rgba(112, 112, 112, 0.4);
+  height: 2px;
+  width: 100%;
+  margin-top: 22px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .price__range #slider-range-2 .ui-slider-handle {
+  background: #3259fc;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  top: -6px;
+  width: 14px;
+  height: 14px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .price__range #slider-range-2 .ui-slider-range {
+  background: #3259fc;
+  height: 2px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .price__range #slider-range-2 #amount-1,
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .price__range #slider-range-2 #amount-2 {
+  color: #3259fc;
+  background: none;
+  border: none;
+  width: 50px;
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  outline: none;
 }
 
 #portfolio .portfolio__wrapper .right .filter__wrapper .filter .metr__range {
   margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .metr__range #slider-range {
+  background: rgba(112, 112, 112, 0.4);
+  height: 2px;
+  width: 100%;
+  margin-top: 22px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .metr__range #slider-range .ui-slider-handle {
+  background: #3259fc;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  top: -6px;
+  width: 14px;
+  height: 14px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .metr__range #slider-range .ui-slider-range {
+  background: #3259fc;
+  height: 2px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .metr__range #slider-range #amount1,
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .metr__range #slider-range #amount2 {
+  color: #3259fc;
+  background: none;
+  border: none;
+  width: 50px;
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  outline: none;
 }
 
 #portfolio .portfolio__wrapper .right .filter__wrapper .filter .search__btn {
