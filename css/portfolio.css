@@ -810,10 +810,80 @@ footer {
 
 #portfolio .portfolio__wrapper .right .filter__wrapper .filter .price__range {
   margin-top: 28px;
+  padding-bottom: 20px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .price__range #slider-range-2 {
+  background: rgba(112, 112, 112, 0.4);
+  height: 2px;
+  width: 100%;
+  margin-top: 22px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .price__range #slider-range-2 .ui-slider-handle {
+  background: #3259fc;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  top: -6px;
+  width: 14px;
+  height: 14px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .price__range #slider-range-2 .ui-slider-range {
+  background: #3259fc;
+  height: 2px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .price__range #slider-range-2 #amount-1,
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .price__range #slider-range-2 #amount-2 {
+  color: #3259fc;
+  background: none;
+  border: none;
+  width: 50px;
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  outline: none;
 }
 
 #portfolio .portfolio__wrapper .right .filter__wrapper .filter .metr__range {
   margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .metr__range #slider-range {
+  background: rgba(112, 112, 112, 0.4);
+  height: 2px;
+  width: 100%;
+  margin-top: 22px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .metr__range #slider-range .ui-slider-handle {
+  background: #3259fc;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  top: -6px;
+  width: 14px;
+  height: 14px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .metr__range #slider-range .ui-slider-range {
+  background: #3259fc;
+  height: 2px;
+}
+
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .metr__range #slider-range #amount1,
+#portfolio .portfolio__wrapper .right .filter__wrapper .filter .metr__range #slider-range #amount2 {
+  color: #3259fc;
+  background: none;
+  border: none;
+  width: 50px;
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  outline: none;
 }
 
 #portfolio .portfolio__wrapper .right .filter__wrapper .filter .search__btn {

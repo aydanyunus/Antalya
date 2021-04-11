@@ -593,10 +593,71 @@ footer {
           }
           .price__range {
             margin-top: 28px;
-        
+            padding-bottom: 20px;
+            #slider-range-2 {
+              background: rgba(112, 112, 112, 0.4);
+              height: 2px;
+              width: 100%;
+              margin-top: 22px;
+              .ui-slider-handle {
+                background: #3259fc;
+                border: none;
+                border-radius: 50px;
+                outline: none;
+                top: -6px;
+                width: 14px;
+                height: 14px;
+              }
+              .ui-slider-range {
+                background: #3259fc;
+                height: 2px;
+              }
+              #amount-1,
+              #amount-2 {
+                color: #3259fc;
+                background: none;
+                border: none;
+                width: 50px;
+                position: absolute;
+                top: 20px;
+                left: -10px;
+                outline: none;
+              }
+            }
           }
           .metr__range {
             margin-top: 30px;
+            padding-bottom: 20px;
+            #slider-range {
+              background: rgba(112, 112, 112, 0.4);
+              height: 2px;
+              width: 100%;
+              margin-top: 22px;
+              .ui-slider-handle {
+                background: #3259fc;
+                border: none;
+                border-radius: 50px;
+                outline: none;
+                top: -6px;
+                width: 14px;
+                height: 14px;
+              }
+              .ui-slider-range {
+                background: #3259fc;
+                height: 2px;
+              }
+              #amount1,
+              #amount2 {
+                color: #3259fc;
+                background: none;
+                border: none;
+                width: 50px;
+                position: absolute;
+                top: 20px;
+                left: -10px;
+                outline: none;
+              }
+            }
           }
           .search__btn {
             margin-top: 39px;
