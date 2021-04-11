@@ -945,6 +945,20 @@ footer .footer-item .footer-copyright {
   .section-second--item p {
     width: 100% !important;
   }
+  .section-fourth .owl-nav,
+  .owl-dots,
+  .counters {
+    display: none;
+  }
+  .section-clients-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    float: unset;
+  }
   .sectionsecond::after {
     content: none;
   }

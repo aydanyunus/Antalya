@@ -36,6 +36,17 @@ $(document).ready(function () {
         "<i class='fa fa-arrow-left'></i>",
         "<i class='fa fa-arrow-right'></i>",
       ],
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 1,
+        },
+        1000: {
+          items: 2,
+        },
+      },
     });
 });
 // In your Javascript (external .js resource or <script> tag)
@@ -61,16 +72,26 @@ $(".center").slick({
   slidesToShow: 1,
   dots: true,
   arrows: true,
-  swipe: true,
-  //  infinite: true,
-  swipeToSlide: true,
+  responsive: [
+    {
+      breakpoint: 720,
+      settings: {
+        slidesToShow: 1,
+        dots: false,
+        arrows: false,
+      },
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        dots: false,
+        arrows: false,
+        slidesToShow: 1,
+      },
+    },
+  ],
 });
-$(window).resize(function (evt) {
-  if ($(document).width() < 500 && noOfSlides > 5) {
-    alert($(document).width());
-    $(".slider").slick("slickRemove", 5);
-  }
-});
+
 function myFunction() {
   var m = document.getElementsByClassName("slider-img");
   var nodelist = document.getElementsByClassName("main-img").length;

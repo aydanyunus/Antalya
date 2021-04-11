@@ -518,7 +518,6 @@ $secondmain-color: #fb7d76;
 //section3
 .section-third {
   padding-top: 12px;
-  padding-bottom: 150px;
   .section-title {
     display: flex;
     justify-content: space-between;
@@ -809,6 +808,16 @@ footer {
     p {
       width: 100% !important;
     }
+  }
+  .section-fourth .owl-nav,
+  .owl-dots,
+  .counters {
+    display: none;
+  }
+  .section-clients-button {
+    display: flex;
+    justify-content: space-between;
+    float: unset;
   }
   .sectionsecond {
     &::after {
