@@ -312,11 +312,16 @@
 
 .header-filter .tab-content #filtre .filters .select2-container,
 .header-filter .tab-content #morefiltre .filters .select2-container {
-  margin-right: 40px;
+  margin-right: 28px;
   width: -webkit-max-content !important;
   width: -moz-max-content !important;
   width: max-content !important;
   padding-top: 7px;
+}
+
+.header-filter .tab-content #filtre .filters .dropdown,
+.header-filter .tab-content #morefiltre .filters .dropdown {
+  margin-right: 28px;
 }
 
 .header-filter .tab-content #filtre .filters select,
@@ -382,6 +387,145 @@
   cursor: pointer;
 }
 
+.header-filter .tab-content #filtre .dropdown-range-price .dropdown-menu,
+.header-filter .tab-content #morefiltre .dropdown-range-price .dropdown-menu {
+  height: 130px;
+  border: unset;
+  margin-top: 0;
+}
+
+.header-filter .tab-content #filtre .dropdown-range-price .dropdown-price-button,
+.header-filter .tab-content #morefiltre .dropdown-range-price .dropdown-price-button {
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  padding: 7px 18px;
+  border-radius: 6px;
+  background-color: #3259fc;
+  color: #ffffff;
+  margin-top: 28px;
+  float: right;
+  margin-right: 14px;
+}
+
+.header-filter .tab-content #filtre .dropdown-range-price.show,
+.header-filter .tab-content #morefiltre .dropdown-range-price.show {
+  -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.header-filter .tab-content #filtre .dropdown-range-price .dropdown-menu,
+.header-filter .tab-content #morefiltre .dropdown-range-price .dropdown-menu {
+  -webkit-box-shadow: 2px 18px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 18px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header-filter .tab-content #filtre .slider-range-prices,
+.header-filter .tab-content #morefiltre .slider-range-prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-filter .tab-content #filtre .slider-range-prices input,
+.header-filter .tab-content #morefiltre .slider-range-prices input {
+  border: unset;
+  position: unset !important;
+  font-size: 16px !important;
+}
+
+.header-filter .tab-content #filtre .slider-range-prices svg,
+.header-filter .tab-content #morefiltre .slider-range-prices svg {
+  width: 10px;
+  height: 10px;
+  fill: #001136;
+  margin-right: 4px;
+}
+
+.header-filter .tab-content #filtre .slider-range-prices div,
+.header-filter .tab-content #morefiltre .slider-range-prices div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-filter .tab-content #filtre .dropdown-room.show,
+.header-filter .tab-content #morefiltre .dropdown-room.show {
+  -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.header-filter .tab-content #filtre .dropdown-room .dropdown-menu,
+.header-filter .tab-content #morefiltre .dropdown-room .dropdown-menu {
+  width: 355px;
+  -webkit-box-shadow: 2px 18px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 18px 15px rgba(0, 0, 0, 0.1);
+  border: unset;
+  margin-top: unset;
+}
+
+.header-filter .tab-content #filtre .dropdown-room .dropdown-menu-rooms,
+.header-filter .tab-content #morefiltre .dropdown-room .dropdown-menu-rooms {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 16px;
+}
+
+.header-filter .tab-content #filtre .dropdown-room .dropdown-menu-rooms .dropdown-item,
+.header-filter .tab-content #morefiltre .dropdown-room .dropdown-menu-rooms .dropdown-item {
+  width: 55px;
+  height: 45px;
+  border-radius: 10px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  color: #e1e2e7;
+}
+
+.header-filter .tab-content #filtre .dropdown-room .dropdown-menu-rooms .dropdown-item-active,
+.header-filter .tab-content #morefiltre .dropdown-room .dropdown-menu-rooms .dropdown-item-active {
+  background-color: #3259fc;
+  color: #fff;
+  -webkit-box-shadow: 2px 18px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 18px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header-filter .tab-content #filtre .dropdown-room .dropdown-menu-rooms .dropdown-item-active:hover,
+.header-filter .tab-content #morefiltre .dropdown-room .dropdown-menu-rooms .dropdown-item-active:hover {
+  background-color: #3259fc !important;
+  color: #fff;
+}
+
+.header-filter .tab-content #filtre .dropdown-room .dropdown-room-submit,
+.header-filter .tab-content #morefiltre .dropdown-room .dropdown-room-submit {
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  float: right;
+  margin-right: 12px;
+  margin-top: 16px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  background-color: #3259fc;
+  color: #ffffff;
+  -webkit-box-shadow: 3px 1px 17px 1px #ccc;
+  box-shadow: 3px 1px 17px 1px #ccc;
+}
+
 .header .live__chat {
   position: absolute;
   bottom: 100px;
@@ -426,6 +570,51 @@
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   right: 0 !important;
+}
+
+#login-modal .modal-content {
+  height: 322px;
+  width: 293px;
+  border-radius: 15px;
+  margin: 24% auto;
+}
+
+#login-modal .modal-header {
+  border-bottom: unset;
+}
+
+#login-modal .modal-header .modal-title {
+  font-size: 22px;
+  font-weight: 500;
+  color: #001136;
+  padding-top: 32px;
+}
+
+#login-modal .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#login-modal .modal-body a {
+  font-weight: 400;
+  color: #001136;
+  padding: 8px 20px;
+  border: 1px solid #b5b9c4;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+#login-modal .modal-body a svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 9px;
+  fill: blue;
 }
 
 .sectionsecond-title {
@@ -636,7 +825,6 @@
 
 .section-third {
   padding-top: 12px;
-  padding-bottom: 150px;
 }
 
 .section-third .section-title {
@@ -971,6 +1159,20 @@ footer .footer-item .footer-copyright {
   }
   .section-second--item p {
     width: 100% !important;
+  }
+  .section-fourth .owl-nav,
+  .owl-dots,
+  .counters {
+    display: none;
+  }
+  .section-clients-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    float: unset;
   }
   .sectionsecond::after {
     content: none;
