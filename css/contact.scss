@@ -1,0 +1,323 @@
+@font-face {
+  font-family: "Gotham";
+  src: url(../fonts/Gotham-Black);
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+}
+
+#contact {
+  width: 100%;
+  height: 100%;
+  background: url("../images/contact/Group12.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 134px;
+
+  .contact__wrapper {
+    display: flex;
+    flex-direction: row;
+    .contact__left {
+      width: 60%;
+      .contact__header {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        .contact__title {
+          h1 {
+            font-size: 55px;
+            opacity: 0.3;
+            -webkit-text-fill-color: white;
+            -webkit-text-stroke-width: 0.5px;
+            -webkit-text-stroke-color: #fb7d76;
+            margin-bottom: -32px;
+          }
+          h2 {
+            position: relative;
+            font-size: 25px;
+            font-weight: 400;
+          }
+          h6 {
+            font-size: 16px;
+          }
+        }
+      }
+      .contact__main {
+        margin-top: 79px;
+        display: flex;
+        flex-direction: row;
+        .form__left {
+          width: 50%;
+          form {
+            h5 {
+              font-size: 18px;
+              color: #001136;
+              margin-bottom: 19px;
+            }
+            .form-group {
+              margin-bottom: 20px;
+              input,
+              textarea {
+                border: 0.5px solid #001136 !important;
+                border-radius: 10px;
+                opacity: 0.5;
+                box-shadow: none;
+                outline: none;
+                resize: none;
+              }
+            }
+            .btn__submit {
+              background: #fb7d76;
+              color: #ffffff;
+              border-radius: 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              svg {
+                margin-left: 23px;
+                width: 15px;
+                height: 10px;
+              }
+            }
+          }
+        }
+        .contact__us {
+          margin-left: 80px;
+          width: 50%;
+          h5 {
+            font-size: 18px;
+            color: #001136;
+            margin-bottom: 16px;
+          }
+          ul {
+            li {
+              margin-bottom: 16px;
+              display: flex;
+              align-items: baseline;
+              svg {
+                fill: #3259fc;
+                width: 12px;
+                height: 15px;
+              }
+              span {
+                font-weight: normal;
+                margin-left: 19px;
+                color: #001136;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+      .content {
+        margin-top: 55px;
+        p {
+          font-size: 14px;
+          color: #001136;
+          opacity: 0.65;
+        }
+      }
+    }
+    .contact__right {
+      position: absolute;
+      right: 0;
+      top: 100px;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+footer {
+  background: #00142b;
+  padding: 34px 0 26px 0;
+  width: 100%;
+  .footer__wrapper {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    .footer__left {
+      width: 100%;
+      p {
+        display: none;
+      }
+      ul {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 23px;
+        justify-content: space-between;
+        li {
+          a {
+            color: #ffffff;
+          }
+        }
+      }
+      span {
+        font-size: 12px;
+        margin-top: 23px;
+        opacity: 0.45;
+      }
+    }
+    .footer__right {
+      justify-content: flex-end;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      h5 {
+        font-size: 14px;
+        margin-right: 32px;
+      }
+      ul {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        justify-content: space-between;
+        svg {
+          fill: #ffffff;
+          width: 17px;
+          height: 17px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1199.98px) {
+  .contact__right {
+    width: 40% !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .footer__wrapper {
+    .footer__left {
+      width: 75% !important;
+    }
+    .footer__right {
+      width: 25% !important;
+      margin-left: 20px;
+      h5 {
+        display: none;
+      }
+      ul {
+        width: 100% !important;
+      }
+    }
+  }
+  #contact {
+    .contact__wrapper {
+      flex-direction: column !important;
+      .contact__left,
+      .contact__right {
+        width: 100% !important;
+      }
+      .contact__main {
+        flex-direction: column-reverse !important;
+        .form__left,
+        .contact__us {
+          width: 100% !important;
+        }
+        .form__left {
+          margin-top: 50px;
+          .btn__submit {
+            width: 100%;
+          }
+        }
+        .contact__us {
+          margin-left: 0 !important;
+        }
+      }
+      .contact__right {
+        width: 100%;
+        position: relative !important;
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  footer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 69px 0 100px 0;
+    z-index: 999 !important;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("../images/MaskGroup3.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 1 !important;
+    }
+    .footer__wrapper {
+      .footer__left {
+        p {
+          display: block !important;
+          font-size: 14px;
+          padding-bottom: 25px;
+          border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+        }
+        ul {
+          flex-wrap: wrap;
+          margin-top: 32px;
+          li {
+            width: 50% !important;
+          }
+        }
+      }
+      .footer__right {
+        text-align: right !important;
+        h5 {
+          display: none;
+        }
+        ul {
+          display: block !important;
+          li {
+            margin-bottom: 40px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
