@@ -233,6 +233,36 @@ $secondmain-color: #fb7d76;
           color: $common-color;
         }
       }
+      
+    }
+    .nav-tabs {
+      border-bottom: 0;
+      .nav-item-filter-1 {
+        .nav-link {
+          border-top-right-radius: 0;
+          border-top-left-radius: 10px;
+        
+        }
+      }
+      .nav-item-filter-2 {
+        .nav-link {
+          border-top-right-radius: 10px;
+          border-top-left-radius: 0px;
+          background: #ffffff;
+          color: rgba(0, 17, 54, 0.5);
+         
+          
+        }
+       
+      }
+      .nav-link {
+        border: none;
+        color: rgba(0, 17, 54, 0.5);
+      }
+      .nav-link.active {
+        background: #3259fc;
+        color: #ffffff;
+      }
     }
     .tab-content {
       width: 843px;
@@ -242,6 +272,7 @@ $secondmain-color: #fb7d76;
         background-color: $common-color;
         box-shadow: 1px 0px 9px 4px #d4d4d4c2;
         border-radius: 10px;
+        border-top-left-radius: 0;
         padding: 20px;
         border: unset;
         .filters {
