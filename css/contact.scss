@@ -43,12 +43,13 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 134px;
-
+  position: relative;
   .contact__wrapper {
     display: flex;
     flex-direction: row;
     .contact__left {
       width: 60%;
+      position: relative;
       .contact__header {
         display: flex;
         flex-direction: row;
@@ -136,6 +137,13 @@ ul {
                 color: #001136;
                 font-size: 16px;
               }
+              .phone__mobile__size {
+                display: none;
+                &:last-child {
+                  border-left: 0.5px solid #001136;
+                  padding-left: 9px;
+                }
+              }
             }
           }
         }
@@ -148,11 +156,72 @@ ul {
           opacity: 0.65;
         }
       }
+      .live__chat {
+        position: absolute;
+        bottom: 300px;
+        right: 0px;
+        background: #3259fc;
+        border-radius: 10px;
+        border: none;
+        padding: 8px 6px 8px 6px;
+        display: none;
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg {
+            width: 29px;
+            height: 25px;
+          }
+        }
+      }
+      .mobile__nav {
+        background: #ffffff;
+        position: absolute;
+        width: 100%;
+        bottom: 120px;
+        left: 0;
+        display: none;
+        .nav__wrapper {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px;
+          button {
+            border: none;
+            background: none;
+            a {
+              display: block;
+              color: #3259fc;
+              opacity: 0.3;
+            }
+            svg {
+              width: 23px;
+              height: 23px;
+              fill: #3259fc;
+              opacity: 0.3;
+            }
+          }
+          .active {
+            a {
+              color: #3259fc;
+              opacity: 1;
+            }
+            svg {
+              fill: #3259fc;
+              opacity: 1;
+            }
+          }
+        }
+      }
     }
     .contact__right {
       position: absolute;
       right: 0;
       top: 100px;
+      width: 40%;
       img {
         max-width: 100%;
       }
@@ -217,9 +286,9 @@ footer {
     }
   }
 }
-@media (max-width: 1199.98px) {
+@media (min-width: 1199.98px) {
   .contact__right {
-    width: 40% !important;
+    width: unset !important;
   }
 }
 @media (max-width: 991.98px) {
@@ -315,6 +384,30 @@ footer {
             &:last-child {
               margin-bottom: 0;
             }
+          }
+        }
+      }
+    }
+  }
+  .live__chat {
+    display: block !important;
+  }
+  .mobile__nav {
+    display: block !important;
+  }
+  .contact__us {
+    margin-left: 0 !important;
+    ul {
+      li {
+        &:last-child {
+          span {
+            display: none;
+            br {
+              display: none;
+            }
+          }
+          .phone__mobile__size {
+            display: block !important;
           }
         }
       }

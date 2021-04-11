@@ -51,6 +51,7 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 134px;
+  position: relative;
 }
 
 #contact .contact__wrapper {
@@ -65,6 +66,7 @@ ul {
 
 #contact .contact__wrapper .contact__left {
   width: 60%;
+  position: relative;
 }
 
 #contact .contact__wrapper .contact__left .contact__header {
@@ -191,6 +193,15 @@ ul {
   font-size: 16px;
 }
 
+#contact .contact__wrapper .contact__left .contact__main .contact__us ul li .phone__mobile__size {
+  display: none;
+}
+
+#contact .contact__wrapper .contact__left .contact__main .contact__us ul li .phone__mobile__size:last-child {
+  border-left: 0.5px solid #001136;
+  padding-left: 9px;
+}
+
 #contact .contact__wrapper .contact__left .content {
   margin-top: 55px;
 }
@@ -201,10 +212,94 @@ ul {
   opacity: 0.65;
 }
 
+#contact .contact__wrapper .contact__left .live__chat {
+  position: absolute;
+  bottom: 300px;
+  right: 0px;
+  background: #3259fc;
+  border-radius: 10px;
+  border: none;
+  padding: 8px 6px 8px 6px;
+  display: none;
+}
+
+#contact .contact__wrapper .contact__left .live__chat a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact .contact__wrapper .contact__left .live__chat a svg {
+  width: 29px;
+  height: 25px;
+}
+
+#contact .contact__wrapper .contact__left .mobile__nav {
+  background: #ffffff;
+  position: absolute;
+  width: 100%;
+  bottom: 120px;
+  left: 0;
+  display: none;
+}
+
+#contact .contact__wrapper .contact__left .mobile__nav .nav__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+#contact .contact__wrapper .contact__left .mobile__nav .nav__wrapper button {
+  border: none;
+  background: none;
+}
+
+#contact .contact__wrapper .contact__left .mobile__nav .nav__wrapper button a {
+  display: block;
+  color: #3259fc;
+  opacity: 0.3;
+}
+
+#contact .contact__wrapper .contact__left .mobile__nav .nav__wrapper button svg {
+  width: 23px;
+  height: 23px;
+  fill: #3259fc;
+  opacity: 0.3;
+}
+
+#contact .contact__wrapper .contact__left .mobile__nav .nav__wrapper .active a {
+  color: #3259fc;
+  opacity: 1;
+}
+
+#contact .contact__wrapper .contact__left .mobile__nav .nav__wrapper .active svg {
+  fill: #3259fc;
+  opacity: 1;
+}
+
 #contact .contact__wrapper .contact__right {
   position: absolute;
   right: 0;
   top: 100px;
+  width: 40%;
 }
 
 #contact .contact__wrapper .contact__right img {
@@ -304,9 +399,9 @@ footer .footer__wrapper .footer__right ul svg {
   height: 17px;
 }
 
-@media (max-width: 1199.98px) {
+@media (min-width: 1199.98px) {
   .contact__right {
-    width: 40% !important;
+    width: unset !important;
   }
 }
 
@@ -407,6 +502,24 @@ footer .footer__wrapper .footer__right ul svg {
   }
   footer .footer__wrapper .footer__right ul li:last-child {
     margin-bottom: 0;
+  }
+  .live__chat {
+    display: block !important;
+  }
+  .mobile__nav {
+    display: block !important;
+  }
+  .contact__us {
+    margin-left: 0 !important;
+  }
+  .contact__us ul li:last-child span {
+    display: none;
+  }
+  .contact__us ul li:last-child span br {
+    display: none;
+  }
+  .contact__us ul li:last-child .phone__mobile__size {
+    display: block !important;
   }
 }
 /*# sourceMappingURL=contact.css.map */
