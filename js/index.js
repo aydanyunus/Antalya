@@ -164,22 +164,34 @@ $("#slider").slider({
   },
 });
 
-$(".ui-slider-range").append(
-  '<span class="price-range-both value"><i>$' +
-    $("#slider").slider("values", 0) +
-    " - </i>" +
-    $("#slider").slider("values", 1) +
-    "</span>"
-);
+//range price
+$(function () {
+  $(".slider-range-index").slider({
+    range: true,
+    min: 0,
+    max: 10000,
+    values: [1000, 5000],
+    slide: function (event, ui) {
+      $(".amount-index-1").val(ui.values[0]),
+        $(".amount-index-2").val(ui.values[1]);
+    },
+  });
+  $(".amount-index-1").val($(".slider-range-index").slider("values", 0));
+  $(".amount-index-2").val($(".slider-range-index").slider("values", 1));
+});
 
-$(".ui-slider-handle:eq(0)").append(
-  '<span class="price-range-min value">$' +
-    $("#slider").slider("values", 0) +
-    "</span>"
-);
-
-$(".ui-slider-handle:eq(1)").append(
-  '<span class="price-range-max value">$' +
-    $("#slider").slider("values", 1) +
-    "</span>"
-);
+//range metr
+$(function () {
+  $("#slider-range").slider({
+    range: true,
+    min: 0,
+    max: 500,
+    values: [90, 250],
+    slide: function (event, ui) {
+      $("#amount1").val(ui.values[0] + " m"),
+        $("#amount2").val(ui.values[1] + " m");
+    },
+  });
+  $("#amount1").val($("#slider-range").slider("values", 0) + " m");
+  $("#amount2").val($("#slider-range").slider("values", 1) + " m");
+});
