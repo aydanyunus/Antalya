@@ -519,6 +519,18 @@ footer {
                 border-radius: 12px;
                 box-shadow: none;
                 outline: none;
+                &::after {
+                  display: inline-block;
+                  width: 10px;
+                  height: 10px;
+                  border-top: 2px solid #3259fc;
+                  border-right: 2px solid #3259fc;
+                  border-left: none;
+                  transform: rotate(135deg);
+                  -webkit-transform: rotate(135deg);
+                  box-sizing: border-box;
+                }
+               
                 svg {
                   width: 24px;
                   height: 26px;
@@ -529,6 +541,21 @@ footer {
               .btn__property {
                 border-bottom-left-radius: 0;
                 border-bottom-right-radius: 0;
+              }
+              .dropdown-toggle {
+                &::after {
+                  display: inline-block;
+                  margin-top: 10px;
+                  width: 10px;
+                  height: 10px;
+                  transform: rotate(135deg);
+                  -webkit-transform: rotate(135deg);
+                  box-sizing: border-box;
+                  border-top: none;
+                  border-bottom: 2px solid #3259fc;
+                  border-left: 2px solid #3259fc;
+                  border-right: none;
+                }
               }
             }
             .dropdown-menu {
