@@ -530,7 +530,7 @@ footer {
                   -webkit-transform: rotate(135deg);
                   box-sizing: border-box;
                 }
-               
+
                 svg {
                   width: 24px;
                   height: 26px;
@@ -705,31 +705,52 @@ footer {
       }
     }
   }
-  .live__chat {
-    position: absolute;
+  .live__chat__btns {
+    position: fixed;
     bottom: 100px;
     right: 20px;
-    background: #3259fc;
-    border-radius: 10px;
-    border: none;
-    padding: 8px 6px 8px 6px;
-    a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      svg {
-        width: 29px;
-        height: 25px;
+    z-index: 999 !important;
+    .whatsapp__btn,
+    .telegram__btn,
+    .messenger__btn,
+    .close__btn {
+      display: none;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .live__chat {
+      background: #3259fc;
+      border-radius: 10px;
+      border: none;
+      padding: 8px 6px 8px 6px;
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+          width: 29px;
+          height: 25px;
+        }
       }
     }
   }
   .mobile__nav {
     background: #ffffff;
-    position: absolute;
+    position: fixed;
     width: 100%;
-    bottom: 80px;
+    bottom: 0;
     left: 0;
     display: none;
+    z-index: 999 !important;
     .nav__wrapper {
       width: 100%;
       display: flex;
@@ -811,7 +832,6 @@ footer {
     bottom: 75% !important;
   }
   .mobile__nav {
-    // display: block !important;
-    bottom: 79% !important;
+    display: block !important;
   }
 }
