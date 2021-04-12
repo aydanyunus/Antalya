@@ -108,17 +108,41 @@ a:hover {
   height: 10px;
 }
 
-#about .live__chat {
-  position: absolute;
+#about .live__chat__btns {
+  position: fixed;
   bottom: 100px;
   right: 20px;
+  z-index: 999 !important;
+}
+
+#about .live__chat__btns .whatsapp__btn,
+#about .live__chat__btns .telegram__btn,
+#about .live__chat__btns .messenger__btn,
+#about .live__chat__btns .close__btn {
+  display: none;
+}
+
+#about .live__chat__btns li {
+  margin-bottom: 15px;
+}
+
+#about .live__chat__btns:last-child {
+  margin-bottom: 0;
+}
+
+#about .live__chat__btns .live__chat {
   background: #3259fc;
   border-radius: 10px;
   border: none;
   padding: 8px 6px 8px 6px;
+  margin-bottom: 15px;
 }
 
-#about .live__chat a {
+#about .live__chat__btns .live__chat:last-child {
+  margin-bottom: 0;
+}
+
+#about .live__chat__btns .live__chat a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,18 +154,19 @@ a:hover {
           justify-content: center;
 }
 
-#about .live__chat a svg {
+#about .live__chat__btns .live__chat a svg {
   width: 29px;
   height: 25px;
 }
 
 #about .mobile__nav {
   background: #ffffff;
-  position: absolute;
+  position: fixed;
   width: 100%;
-  bottom: 80px;
+  bottom: 0;
   left: 0;
   display: none;
+  z-index: 999 !important;
 }
 
 #about .mobile__nav .nav__wrapper {

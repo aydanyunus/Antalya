@@ -60,3 +60,6 @@ $(function () {
   $("#amount1").val($("#slider-range").slider("values", 0) + " m");
   $("#amount2").val($("#slider-range").slider("values", 1) + " m");
 });
+
+
+

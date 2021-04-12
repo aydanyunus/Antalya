@@ -118,45 +118,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="mobile__nav">
-                <div class="container">
-                    <div class="nav__wrapper">
-                        <button>
-                            <svg>
-                                <use xlink:href="/images/icons/icons.svg#icon-house"></use>
-                            </svg>
-                            <a href="#">
-                                Ana sayfa
-                            </a>
-                        </button>
-                        <button class="search-button">
-                            <svg>
-                                <use xlink:href="/images/icons/icons.svg#icon-search"></use>
-                            </svg>
-                            <a href="#">
-                                arama
-                            </a>
-                        </button>
-                        <button>
-                            <svg>
-                                <use xlink:href="/images/icons/icons.svg#icon-portfolio"></use>
-                            </svg>
-                            <a href="#">
-                                portföy
-                            </a>
-                        </button>
-                        <button>
-                            <svg>
-                                <use xlink:href="/images/icons/icons.svg#icon-favorite"></use>
-                            </svg>
-                            <a href="#">
-                                kayıt
-                            </a>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
+            
             <div class="header-description container">
                 <h1>Hayallerİnİze
                     açılan kapı</h1>
@@ -248,7 +210,7 @@
                                                 </svg> <input type="text" class="amount-index-2" readonly></div>
 
                                         </div>
-                                        <div class="slider-range-index">
+                                        <div class="slider-range-index" id="ui-horizontal">
                                             <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
                                                 <input type="text" class="amount-index-1" readonly>
                                             </span>
@@ -318,7 +280,7 @@
                                                 </svg> <input type="text" class="amount-index-2" readonly></div>
 
                                         </div>
-                                        <div class="slider-range-index">
+                                        <div class="slider-range-index" id="ui-horizontal">
                                             <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
                                                 <input type="text" class="amount-index-1" readonly>
                                             </span>
@@ -361,7 +323,7 @@
                                 <a onclick="return false;" class="btn btn-secondary dropdown-toggle" href="#"
                                     role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
-                                    Fiyat aralığı
+                                    Metre Kare
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                     <a onclick="return false;" class="dropdown-item" href="">
@@ -377,7 +339,7 @@
                                                 </svg> <input type="text" class="amount-index-2" readonly></div>
 
                                         </div>
-                                        <div class="slider-range-index">
+                                        <div class="slider-range-index" id="ui-horizontal">
                                             <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
                                                 <input type="text" class="amount-index-1" readonly>
                                             </span>
@@ -481,7 +443,96 @@
                     <a href="#" class="filter-submit">Submit</a>
                 </form>
             </div>
+            <ul class="live__chat__btns">
+                <li class="whatsapp__btn">
+                    <button class="live__chat">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="images/icons/icons.svg#icon-whatsapp"></use>
+                            </svg>
+                        </a>
+                    </button>
+                </li>
+                <li class="telegram__btn">
+                    <button class="live__chat">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="images/icons/icons.svg#icon-telegram"></use>
+                            </svg>
+                        </a>
+                    </button>
+                </li>
+                <li class="messenger__btn">
+                    <button class="live__chat">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="images/icons/icons.svg#icon-messenger"></use>
+                            </svg>
+                        </a>
+                    </button>
+                </li>
+                <li class="chat__btn">
+                    <button class="live__chat">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="images/icons/icons.svg#icon-live-chat"></use>
+                            </svg>
+                        </a>
+                    </button>
+                </li>
+                <li class="close__btn">
+                    <button class="live__chat">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="images/icons/icons.svg#icon-close-sign"></use>
+                            </svg>
+                        </a>
+                    </button>
+                </li>
+              
+            </ul>
+            <div class="mobile__nav">
+                <div class="container">
+                    <div class="nav__wrapper">
+                        <button>
+                            <svg>
+                                <use xlink:href="/images/icons/icons.svg#icon-house"></use>
+                            </svg>
+                            <a href="#">
+                                Ana sayfa
+                            </a>
+                        </button>
+                        <button class="search-button">
+                            <svg>
+                                <use xlink:href="/images/icons/icons.svg#icon-search"></use>
+                            </svg>
+                            <a href="#">
+                                arama
+                            </a>
+                        </button>
+                        <button>
+                            <svg>
+                                <use xlink:href="/images/icons/icons.svg#icon-portfolio"></use>
+                            </svg>
+                            <a href="#">
+                                portföy
+                            </a>
+                        </button>
+                        <button>
+                            <svg>
+                                <use xlink:href="/images/icons/icons.svg#icon-favorite"></use>
+                            </svg>
+                            <a href="#">
+                                kayıt
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
         </div>
+     
+       
         </div>
     </header>
     <!-- modal start-->
@@ -947,6 +998,7 @@
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/owl.carousel.js"></script>
+    <script src="js/chat.js"></script>
     <script src="js/index.js"></script>
 </body>
 

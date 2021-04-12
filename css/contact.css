@@ -212,18 +212,53 @@ ul {
   opacity: 0.65;
 }
 
-#contact .contact__wrapper .contact__left .live__chat {
+#contact .contact__wrapper .contact__right {
   position: absolute;
-  bottom: 300px;
-  right: 0px;
+  right: 0;
+  top: 100px;
+  width: 40%;
+}
+
+#contact .contact__wrapper .contact__right img {
+  max-width: 100%;
+}
+
+#contact .live__chat__btns {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 999 !important;
+}
+
+#contact .live__chat__btns .whatsapp__btn,
+#contact .live__chat__btns .telegram__btn,
+#contact .live__chat__btns .messenger__btn,
+#contact .live__chat__btns .close__btn {
+  display: none;
+}
+
+#contact .live__chat__btns li {
+  margin-bottom: 15px;
+}
+
+#contact .live__chat__btns:last-child {
+  margin-bottom: 0;
+}
+
+#contact .live__chat__btns .live__chat {
   background: #3259fc;
   border-radius: 10px;
   border: none;
   padding: 8px 6px 8px 6px;
-  display: none;
+  margin-bottom: 15px;
 }
 
-#contact .contact__wrapper .contact__left .live__chat a {
+#contact .live__chat__btns .live__chat:last-child {
+  margin-bottom: 0;
+}
+
+#contact .live__chat__btns .live__chat a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,21 +270,22 @@ ul {
           justify-content: center;
 }
 
-#contact .contact__wrapper .contact__left .live__chat a svg {
+#contact .live__chat__btns .live__chat a svg {
   width: 29px;
   height: 25px;
 }
 
-#contact .contact__wrapper .contact__left .mobile__nav {
+#contact .mobile__nav {
   background: #ffffff;
-  position: absolute;
+  position: fixed;
   width: 100%;
-  bottom: 120px;
+  bottom: 0;
   left: 0;
   display: none;
+  z-index: 999 !important;
 }
 
-#contact .contact__wrapper .contact__left .mobile__nav .nav__wrapper {
+#contact .mobile__nav .nav__wrapper {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -267,43 +303,32 @@ ul {
   padding: 10px;
 }
 
-#contact .contact__wrapper .contact__left .mobile__nav .nav__wrapper button {
+#contact .mobile__nav .nav__wrapper button {
   border: none;
   background: none;
 }
 
-#contact .contact__wrapper .contact__left .mobile__nav .nav__wrapper button a {
+#contact .mobile__nav .nav__wrapper button a {
   display: block;
   color: #3259fc;
   opacity: 0.3;
 }
 
-#contact .contact__wrapper .contact__left .mobile__nav .nav__wrapper button svg {
+#contact .mobile__nav .nav__wrapper button svg {
   width: 23px;
   height: 23px;
   fill: #3259fc;
   opacity: 0.3;
 }
 
-#contact .contact__wrapper .contact__left .mobile__nav .nav__wrapper .active a {
+#contact .mobile__nav .nav__wrapper .active a {
   color: #3259fc;
   opacity: 1;
 }
 
-#contact .contact__wrapper .contact__left .mobile__nav .nav__wrapper .active svg {
+#contact .mobile__nav .nav__wrapper .active svg {
   fill: #3259fc;
   opacity: 1;
-}
-
-#contact .contact__wrapper .contact__right {
-  position: absolute;
-  right: 0;
-  top: 100px;
-  width: 40%;
-}
-
-#contact .contact__wrapper .contact__right img {
-  max-width: 100%;
 }
 
 footer {
@@ -460,7 +485,7 @@ footer .footer__wrapper .footer__right ul svg {
     width: 100%;
     height: 100%;
     padding: 69px 0 100px 0;
-    z-index: 999 !important;
+    z-index: 99 !important;
   }
   footer::before {
     content: "";
@@ -503,7 +528,7 @@ footer .footer__wrapper .footer__right ul svg {
   footer .footer__wrapper .footer__right ul li:last-child {
     margin-bottom: 0;
   }
-  .live__chat {
+  .live__chat__btns {
     display: block !important;
   }
   .mobile__nav {

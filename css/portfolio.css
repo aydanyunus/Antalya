@@ -939,17 +939,41 @@ footer {
   padding: 13px;
 }
 
-#portfolio .live__chat {
-  position: absolute;
+#portfolio .live__chat__btns {
+  position: fixed;
   bottom: 100px;
   right: 20px;
+  z-index: 999 !important;
+}
+
+#portfolio .live__chat__btns .whatsapp__btn,
+#portfolio .live__chat__btns .telegram__btn,
+#portfolio .live__chat__btns .messenger__btn,
+#portfolio .live__chat__btns .close__btn {
+  display: none;
+}
+
+#portfolio .live__chat__btns li {
+  margin-bottom: 15px;
+}
+
+#portfolio .live__chat__btns:last-child {
+  margin-bottom: 0;
+}
+
+#portfolio .live__chat__btns .live__chat {
   background: #3259fc;
   border-radius: 10px;
   border: none;
   padding: 8px 6px 8px 6px;
+  margin-bottom: 15px;
 }
 
-#portfolio .live__chat a {
+#portfolio .live__chat__btns .live__chat:last-child {
+  margin-bottom: 0;
+}
+
+#portfolio .live__chat__btns .live__chat a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -961,18 +985,19 @@ footer {
           justify-content: center;
 }
 
-#portfolio .live__chat a svg {
+#portfolio .live__chat__btns .live__chat a svg {
   width: 29px;
   height: 25px;
 }
 
 #portfolio .mobile__nav {
   background: #ffffff;
-  position: absolute;
+  position: fixed;
   width: 100%;
-  bottom: 80px;
+  bottom: 0;
   left: 0;
   display: none;
+  z-index: 999 !important;
 }
 
 #portfolio .mobile__nav .nav__wrapper {
@@ -1070,7 +1095,7 @@ footer {
     bottom: 75% !important;
   }
   .mobile__nav {
-    bottom: 79% !important;
+    display: block !important;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */
