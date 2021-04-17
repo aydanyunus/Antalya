@@ -126,10 +126,25 @@ ul {
               margin-bottom: 16px;
               display: flex;
               align-items: baseline;
-              svg {
-                fill: #3259fc;
-                width: 12px;
-                height: 15px;
+              .svg {
+                position: relative;
+                &::after {
+                  content: "";
+                  display: none;
+                  position: absolute;
+                  left: 0px;
+                  top: 5px;
+                  width: 28px;
+                  height: 28px;
+                  background: #fb7d76;
+                  border-radius: 50px;
+                  opacity: 0.15;
+                }
+                svg {
+                  fill: #3259fc;
+                  width: 12px;
+                  height: 15px;
+                }
               }
               span {
                 font-weight: normal;
@@ -420,6 +435,16 @@ footer {
     margin-left: 0 !important;
     ul {
       li {
+        .svg {
+          position: relative;
+          &::after {
+            display: block !important;
+          }
+          svg {
+            width: 20px !important;
+            height: 25px !important;
+          }
+        }
         &:last-child {
           span {
             display: none;
@@ -432,6 +457,7 @@ footer {
           }
         }
       }
+     
     }
   }
 }

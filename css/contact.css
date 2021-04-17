@@ -180,7 +180,24 @@ ul {
           align-items: baseline;
 }
 
-#contact .contact__wrapper .contact__left .contact__main .contact__us ul li svg {
+#contact .contact__wrapper .contact__left .contact__main .contact__us ul li .svg {
+  position: relative;
+}
+
+#contact .contact__wrapper .contact__left .contact__main .contact__us ul li .svg::after {
+  content: "";
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  width: 28px;
+  height: 28px;
+  background: #fb7d76;
+  border-radius: 50px;
+  opacity: 0.15;
+}
+
+#contact .contact__wrapper .contact__left .contact__main .contact__us ul li .svg svg {
   fill: #3259fc;
   width: 12px;
   height: 15px;
@@ -536,6 +553,16 @@ footer .footer__wrapper .footer__right ul svg {
   }
   .contact__us {
     margin-left: 0 !important;
+  }
+  .contact__us ul li .svg {
+    position: relative;
+  }
+  .contact__us ul li .svg::after {
+    display: block !important;
+  }
+  .contact__us ul li .svg svg {
+    width: 20px !important;
+    height: 25px !important;
   }
   .contact__us ul li:last-child span {
     display: none;
