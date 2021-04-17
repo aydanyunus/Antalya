@@ -597,3 +597,6 @@
   outline: none;
   font-size: 15px !important;
 }
+.headet-mobile-filter .ui-slider .ui-slider-range {
+  height: 2px;
+}
