@@ -317,6 +317,10 @@ footer {
   padding-left: 0 !important;
 }
 
+#services-slider .services-slider__wrapper .owl-carousel .owl-stage .owl-item {
+  width: unset !important;
+}
+
 #services-slider .services-slider__wrapper .owl-carousel .item {
   position: relative;
 }

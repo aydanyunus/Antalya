@@ -245,6 +245,9 @@ footer {
       margin-top: 74px;
       .owl-stage {
         padding-left: 0 !important;
+        .owl-item {
+          width: unset !important;
+        }
       }
       .item {
         position: relative;
