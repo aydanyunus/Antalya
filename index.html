@@ -66,7 +66,10 @@
                         <a href="#" data-toggle="modal" data-target="#login-modal">Giriş <img src="images/arrow-right.svg" alt=""></a>
                     </div>
                     <div class="header-mobile-burger">
-                        <img src="./images/close.png" alt="">
+                        <svg class="icon icon-close">
+                            <use xlink:href="/images/icons/icons.svg#icon-close">
+                            </use>
+                        </svg>
                     </div>
                 </div>
                 <div class="mobile-nav">
@@ -118,7 +121,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="header-description container">
                 <h1>Hayallerİnİze
                     açılan kapı</h1>
@@ -413,12 +416,37 @@
                     </div>
                     <div class="filter-place">
                         <label for="">Konum</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Konum Seç</option>
-                            <option value="1">Baku</option>
-                            <option value="2">Turkiye</option>
-                            <option value="3">Baku</option>
-                        </select>
+                        <div class="dropdown dropdown__property">
+                            <button class="btn btn__property dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hepsi
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-property" aria-labelledby="dropdownMenuButton"
+                                style="">
+                                <a class="dropdown-item dropdown-item-property" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/icons.svg#icon-condominium"></use>
+                                    </svg>
+                                    Daire
+                                </a>
+                                <a class="dropdown-item dropdown-item-property" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/icons.svg#icon-home"></use>
+                                    </svg>
+                                    Villa</a>
+                                <a class="dropdown-item dropdown-item-property" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/icons.svg#icon-placeholder"></use>
+                                    </svg>
+                                    Arsa</a>
+                                <a class="dropdown-item dropdown-item-property" href="#">
+                                    <svg>
+                                        <use xlink:href="images/icons/icons.svg#icon-condominium"></use>
+                                    </svg>
+                                    İşyeri</a>
+
+                            </div>
+                        </div>
                     </div>
                     <div class="filter-room">
                         <div class="room-item">1+1</div>
@@ -427,14 +455,28 @@
                         <div class="room-item">4+1</div>
                         <div class="room-item">5+1</div>
                     </div>
-                    <!-- <div class="filter-price">
+                    <div class="filter-price">
                         <label for="">Fiyat aralığı</label>
-                        <div id="slider"></div>
+                        <div class="slider-range-index" id="ui-horizontal">
+                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
+                                <input type="text" class="amount-index-1" readonly>
+                            </span>
+                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
+                                <input type="text" class="amount-index-2" readonly>
+                            </span>
+                        </div>
                     </div>
                     <div class="filter-price">
                         <label for="">M2</label>
-                        <div id="slider"></div>
-                    </div> -->
+                        <div class="slider-range-index" id="ui-horizontal">
+                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
+                                <input type="text" class="amount-index-1" readonly>
+                            </span>
+                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
+                                <input type="text" class="amount-index-2" readonly>
+                            </span>
+                        </div>
+                    </div>
                     <div class="filter-id">
                         <label for="">Emlad ID:</label>
                         <input type="text" class="form-control" placeholder="Aradığınız emlakın ID-sini girin"
@@ -489,7 +531,7 @@
                         </a>
                     </button>
                 </li>
-              
+
             </ul>
             <div class="mobile__nav">
                 <div class="container">
@@ -531,8 +573,8 @@
 
             </div>
         </div>
-     
-       
+
+
         </div>
     </header>
     <!-- modal start-->
