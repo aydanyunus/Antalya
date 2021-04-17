@@ -658,6 +658,10 @@ header {
   right: 0 !important;
 }
 
+#login-modal {
+  position: absolute;
+}
+
 #login-modal .modal-content {
   height: 322px;
   width: 293px;

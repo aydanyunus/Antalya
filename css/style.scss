@@ -542,6 +542,7 @@ header {
 }
 //modal
 #login-modal {
+  position: absolute;
   .modal-content {
     height: 322px;
     width: 293px;
@@ -1028,6 +1029,7 @@ footer {
   .header-filter {
     display: none;
   }
+
   .section-title {
     flex-direction: column !important;
     h2,
@@ -1232,6 +1234,8 @@ footer {
       background-size: cover;
     }
   }
+
+ 
   section {
     overflow-x: hidden !important;
   }

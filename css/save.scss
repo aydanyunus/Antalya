@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Gotham";
+  src: url(../fonts/Gotham-Black);
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+header,
+footer {
+  width: 100%;
+}
+
+#portfolio {
+    .portfolio__wrapper {
+        .left {
+            width: 100%;
+            .portfolio__bottom  {
+                .houses.show.active  {
+                    .house__item {
+                        width: 23%;
+                        .house__info {
+                            h6 {
+                                svg {
+                                    width: 31px;
+                                    height: 38px;
+                                    fill: #FB7D76;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        
+        }
+    }
+}
