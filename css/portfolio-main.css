@@ -1,0 +1,288 @@
+.portfolio-main-left {
+  max-width: 848px;
+}
+
+.portfolio-main-left .lightSlider {
+  overflow: unset;
+}
+
+.portfolio-main-left #imageGallery {
+  padding-top: 7px;
+}
+
+.portfolio-main-left #imageGallery li {
+  position: relative;
+}
+
+.portfolio-main-left #imageGallery li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, transparent), to(#191818cf));
+  background: linear-gradient(to bottom, transparent 20%, #191818cf 100%);
+}
+
+.portfolio-main-left #imageGallery li img {
+  width: 100%;
+  height: 411px;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio-main-left #imageGallery li .overlay {
+  position: absolute;
+  top: 1px;
+}
+
+.portfolio-main-left #imageGallery li .overlay-top .overlay-price {
+  position: relative;
+}
+
+.portfolio-main-left #imageGallery li .overlay-top .overlay-price .ribbon__svg {
+  position: absolute;
+  left: -3px;
+  top: -8px;
+}
+
+.portfolio-main-left #imageGallery li .overlay-top .overlay-price .ribbon__svg svg {
+  width: 196px;
+  height: 136px;
+  opacity: 1;
+}
+
+.portfolio-main-left #imageGallery li .overlay-top .overlay-price .price__info {
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  max-width: 113px;
+  max-height: 75px;
+}
+
+.portfolio-main-left #imageGallery li .overlay-top .overlay-price .price__info h6 {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.portfolio-main-left #imageGallery li .overlay-top .overlay-price .price__info .sale__price {
+  font-size: 24px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3px;
+}
+
+.portfolio-main-left #imageGallery li .overlay-top .overlay-price .price__info .sale__price svg {
+  width: 20px;
+  height: 22px;
+  fill: #ffffff;
+  opacity: 1;
+}
+
+.portfolio-main-left #imageGallery li .overlay-top .overlay-price .price__info .old__price {
+  font-size: 12px;
+  text-decoration: line-through;
+  color: #9aadfd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio-main-left #imageGallery li .overlay-top .overlay-price .price__info .old__price svg {
+  width: 10px;
+  height: 11px;
+  fill: #9aadfd;
+}
+
+.portfolio-main-left #imageGallery li .overlay-top .overlay-fullscreen {
+  position: absolute;
+  left: 50rem;
+  top: 11px;
+  background: #fff;
+  padding: 4px 9px;
+  border-radius: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 2px;
+  cursor: pointer;
+}
+
+.portfolio-main-left #imageGallery li .overlay-top .overlay-fullscreen svg {
+  width: 16px;
+  height: 16px;
+}
+
+.portfolio-main-left #imageGallery li .overlay-bottom {
+  position: relative;
+  top: 23rem;
+  left: 20px;
+}
+
+.portfolio-main-left #imageGallery li .overlay-bottom p {
+  color: #ffffff;
+}
+
+.portfolio-main-left .lSGallery {
+  width: 100% !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10px;
+}
+
+.portfolio-main-left .lSGallery li {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  margin-right: 15px !important;
+}
+
+.portfolio-main-left .lSGallery li img {
+  width: 90px;
+  height: 86px !important;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio-main-left .lSGallery li:nth-child(1) {
+  position: relative;
+}
+
+.portfolio-main-left .lSGallery li:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.portfolio-main-left .lSGallery li:nth-child(8) {
+  position: relative;
+  margin-right: 0 !important;
+}
+
+.portfolio-main-left .lSGallery li:nth-child(8)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.portfolio-main-left .lSSlideWrapper {
+  overflow: unset;
+}
+
+.portfolio-main-left .lSAction > a {
+  width: 18px;
+  height: 12px;
+  top: 115%;
+  padding: 16px 17px;
+  border: 1px solid #001136;
+  border-radius: 8px;
+  opacity: 1;
+}
+
+.portfolio-main-left .lSNext {
+  background: #001136;
+}
+
+.portfolio-main-left .lSAction > .lSPrev {
+  right: 0;
+  left: 20px;
+  background-image: url(../images/portfolio-main/lightslider-left.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.portfolio-main-left .lSAction > .lSNext {
+  right: 28px;
+  background-image: url(../images/portfolio-main/ligghtslider-right.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.portfolio-main .portfolio-left-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 24px;
+}
+
+.portfolio-main .portfolio-left-top .title h1 {
+  font-size: 55px;
+  opacity: 0.3;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #fb7d76;
+  margin-bottom: -32px;
+}
+
+.portfolio-main .portfolio-left-top .title h2 {
+  position: relative;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.portfolio-main .portfolio-left-top .title h6 {
+  font-size: 16px;
+}
+
+.portfolio-main .portfolio-left-top .title-share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio-main .portfolio-left-top .title-share .share-icon {
+  background-color: #fee5e3;
+  padding: 3px 9px 9px 11px;
+  margin-right: 18px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 50%;
+}
+
+.portfolio-main .portfolio-left-top .title-share .icon-Group-513 {
+  width: 17px;
+  height: 17px;
+}
+
+.portfolio-main .portfolio-left-top .title-share .icon-favorite-1 {
+  width: 32px;
+  height: 40px;
+  fill: #7f889a;
+}
+/*# sourceMappingURL=portfolio-main.css.map */
