@@ -36,7 +36,22 @@ header,
 footer {
   width: 100%;
 }
-
+header {
+  .header-navbar {
+    .change-language {
+      .dropdown {
+        .dropdown-toggle {
+          box-shadow: none;
+          outline: none;
+          &:active {
+            box-shadow: none;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
 #services {
   background: url("../images/services/servicesBg.png");
   width: 100%;
@@ -571,17 +586,17 @@ footer {
   #what__we__do {
     .line__items {
       .work__item__two {
-        right: 20% !important;
+        // right: 20% !important;
       }
       .work__item__three {
         left: 5% !important;
       }
       .work__item__four {
-        right: 20% !important;
+        // right: 20% !important;
       }
 
       .work__item__six {
-        right: 20%  !important;
+        // right: 20%  !important;
       }
     }
   }
@@ -597,26 +612,28 @@ footer {
     .line__items {
       height: 2000px !important;
       .work__item__two {
-        right: 15% !important;
-        top: 0 !important;
+        right: 10% !important;
+        top: 5% !important;
       }
       .work__item__three {
-        left: 5% !important;
-        top: 0 !important;
+        left: 10% !important;
+        top: 10% !important;
       }
       .work__item__four {
-        right: 15% !important;
-        top: 0 !important;
+        right: 10% !important;
+        top: 17% !important;
       }
       .work__item__five {
-        top: 0 !important;
+        top: 25% !important;
+        left: 7% !important;
       }
       .work__item__six {
-        right: 15%  !important;
-        top: 0 !important;
+        right: 10%  !important;
+        top: 29% !important;
       }
       .work__item__seven {
-        top: 0 !important;
+        top: 32% !important;
+        left: 10% !important;
       }
     }
   }

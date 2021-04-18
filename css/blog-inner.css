@@ -1,0 +1,298 @@
+@font-face {
+  font-family: "Gotham";
+  src: url(../fonts/Gotham-Black);
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+header,
+footer {
+  width: 100%;
+}
+
+header .header-navbar .change-language .dropdown .dropdown-toggle {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+header .header-navbar .change-language .dropdown .dropdown-toggle:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+#blog__inner {
+  padding-bottom: 100px;
+  padding-top: 54px;
+  position: relative;
+  background: url("../images/portfolio/Group2.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#blog__inner .blog__inner__wrapper .blog__inner__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+}
+
+#blog__inner .blog__inner__wrapper .blog__inner__top .blog__inner__title h1 {
+  font-size: 55px;
+  opacity: 0.3;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #fb7d76;
+  margin-bottom: -32px;
+}
+
+#blog__inner .blog__inner__wrapper .blog__inner__top .blog__inner__title h2 {
+  position: relative;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+#blog__inner .blog__inner__wrapper .blog__inner__top .blog__inner__title h6 {
+  font-size: 16px;
+}
+
+#blog__inner .blog__inner__wrapper .blog__inner__top .active__tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 6px;
+}
+
+#blog__inner .blog__inner__wrapper .blog__inner__top .active__tab .active__tab__circle {
+  border: 0.5px solid #3259fc;
+  width: 22px;
+  height: 22px;
+  background: #ffffff;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 9;
+  margin-right: 7px;
+}
+
+#blog__inner .blog__inner__wrapper .blog__inner__top .active__tab .active__tab__circle .circle__inner {
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  background: #3259fc;
+}
+
+#blog__inner .blog__inner__wrapper .blog__inner__top .active__tab h4 {
+  font-size: 18px;
+  color: #3259fc;
+}
+
+#blog__inner .blog__inner__wrapper .blog__inner__bottom {
+  margin-top: 38px;
+}
+
+#blog__inner .blog__inner__wrapper .blog__inner__bottom .swiper-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#blog__inner .blog__inner__wrapper .blog__inner__bottom .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+#blog__inner .blog__inner__wrapper .blog__inner__bottom .gallery-top {
+  width: 100%;
+}
+
+#blog__inner .blog__inner__wrapper .blog__inner__bottom .gallery-top .swiper-slide {
+  height: 557px;
+}
+
+#blog__inner .blog__inner__wrapper .blog__inner__bottom .gallery-thumbs {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 0;
+}
+
+#blog__inner .blog__inner__wrapper .blog__inner__bottom .gallery-thumbs .swiper-slide {
+  width: 92px;
+  height: 92px;
+  opacity: 0.4;
+  background-size: cover;
+}
+
+#blog__inner .blog__inner__wrapper .blog__inner__bottom .gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+#blog__inner .live__chat__btns {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 999 !important;
+}
+
+#blog__inner .live__chat__btns .whatsapp__btn,
+#blog__inner .live__chat__btns .telegram__btn,
+#blog__inner .live__chat__btns .messenger__btn,
+#blog__inner .live__chat__btns .close__btn {
+  display: none;
+}
+
+#blog__inner .live__chat__btns li {
+  margin-bottom: 15px;
+}
+
+#blog__inner .live__chat__btns:last-child {
+  margin-bottom: 0;
+}
+
+#blog__inner .live__chat__btns .live__chat {
+  background: #3259fc;
+  border-radius: 10px;
+  border: none;
+  padding: 8px 6px 8px 6px;
+  margin-bottom: 15px;
+}
+
+#blog__inner .live__chat__btns .live__chat:last-child {
+  margin-bottom: 0;
+}
+
+#blog__inner .live__chat__btns .live__chat a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#blog__inner .live__chat__btns .live__chat a svg {
+  width: 29px;
+  height: 25px;
+}
+
+#blog__inner .mobile__nav {
+  background: #ffffff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  display: none;
+  z-index: 999 !important;
+}
+
+#blog__inner .mobile__nav .nav__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+#blog__inner .mobile__nav .nav__wrapper button {
+  border: none;
+  background: none;
+}
+
+#blog__inner .mobile__nav .nav__wrapper button a {
+  display: block;
+  color: #3259fc;
+  opacity: 0.3;
+}
+
+#blog__inner .mobile__nav .nav__wrapper button svg {
+  width: 23px;
+  height: 23px;
+  fill: #3259fc;
+  opacity: 0.3;
+}
+
+#blog__inner .mobile__nav .nav__wrapper .active a {
+  color: #3259fc;
+  opacity: 1;
+}
+
+#blog__inner .mobile__nav .nav__wrapper .active svg {
+  fill: #3259fc;
+  opacity: 1;
+}
+
+@media (max-width: 575px) {
+  .live__chat {
+    bottom: 75% !important;
+  }
+  .mobile__nav {
+    display: block !important;
+  }
+}
+/*# sourceMappingURL=blog-inner.css.map */

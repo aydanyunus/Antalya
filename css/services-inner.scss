@@ -38,6 +38,22 @@ header,
 footer {
   width: 100%;
 }
+header {
+  .header-navbar {
+    .change-language {
+      .dropdown {
+        .dropdown-toggle {
+          box-shadow: none;
+          outline: none;
+          &:active {
+            box-shadow: none;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
 #services-inner {
   background: url("../images/services-inner/Group854.png");
   width: 100%;

@@ -354,6 +354,10 @@ footer {
   width: 100%;
 }
 
+footer::before {
+  display: none;
+}
+
 footer .footer__wrapper {
   color: #ffffff;
   display: -webkit-box;
@@ -507,6 +511,7 @@ footer .footer__wrapper .footer__right ul svg {
   footer::before {
     content: "";
     position: absolute;
+    display: block !important;
     top: 0;
     left: 0;
     width: 100%;
@@ -514,7 +519,7 @@ footer .footer__wrapper .footer__right ul svg {
     background: url("../images/MaskGroup3.png");
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 1 !important;
+    z-index: -1 !important;
   }
   footer .footer__wrapper .footer__left p {
     display: block !important;

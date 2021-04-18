@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog-inner.css">
+    <title>Antalya Property</title>
+</head>
+
+<body>
+    <!-- header section -->
+    <header>
+        <div class="header-navbar container">
+            <div class="logo"><img src="images/logo.png" alt=""></div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Ana sayfa</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="portfolio.html">Portföy</a></li>
+                    <li><a href="services.html">Hizmetler</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="change-language">
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dil <img src="images/turkey.png" alt="" class="change-lang-img"> <img
+                            src="images/arrow-down.svg" alt="">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Türkçe</a>
+                        <a class="dropdown-item" href="#">English</a>
+                        <a class="dropdown-item" href="#">Pусский</a>
+                    </div>
+                </div>
+            </div>
+            <div class="login">
+                <a href="#" data-toggle="modal" data-target="#login-modal">Giriş <img src="images/arrow-right.svg"
+                        alt=""></a>
+            </div>
+        </div>
+        <div class="header-mobile">
+            <div class="header-mobile-logo"><img src="./images/logo.png" alt=""></div>
+            <div class="header-mobile-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-header--nav">
+            <div class="mobile-top">
+                <div class="login">
+                    <a href="#" data-toggle="modal" data-target="#login-modal">Giriş <img src="images/arrow-right.svg"
+                            alt=""></a>
+                </div>
+                <div class="header-mobile-burger">
+                    <svg class="icon icon-close">
+                        <use xlink:href="images/icons/icons.svg#icon-close-sign">
+                        </use>
+                    </svg>
+                </div>
+            </div>
+            <div class="mobile-nav">
+                <div class="nav">
+                    <ul>
+                        <li><a href="index.html">Ana sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="portfolio.html">Portföy</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mobile-language">
+                <div class="change-language">
+                    <div class="dropdown">
+                        <h3>Dil</h3>
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="images/turkey.png" alt="" class="flags">Türkçe <img src="images/arrow-down.svg"
+                                alt="" class="arrow-down">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Türkçe</a>
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">Pусский</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-contact">
+                <h6>İletişime geç</h6>
+                <ul class="footer-contacts">
+                    <li>
+                        <div class="svg">
+                            <svg class="icon icon-place">
+                                <use xlink:href="images/icons/icons.svg#icon-place-black"></use>
+                            </svg>
+                        </div>
+                        <a href="#">Fatih, Esenler , İstanbul</a>
+                    </li>
+                    <li>
+                        <div class="svg">
+                            <svg class="icon icon-email">
+                                <use xlink:href="images/icons/icons.svg#icon-email-black"></use>
+                            </svg>
+                        </div>
+                        <a href="#">Info@antalyaproperty.tr</a>
+                    </li>
+                    <li>
+                        <div class="svg">
+                            <svg class="icon icon-phone-call">
+                                <use xlink:href="images/icons/icons.svg#icon-phone-call-black"></use>
+                            </svg>
+                        </div>
+
+                        <span>
+                            <a href="#">9020 7837 6433</a>
+                            <a href="#">9045 6434 6433</a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- header section -->
+
+    <!-- modal start-->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Giriş</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a href="№"><svg class="icon icon-google">
+                            <use xlink:href="/images/icons/icons.svg#icon-google">
+                            </use>
+                        </svg>Google ile giriş yap</a>
+                    <a href="№"><svg class="icon icon-Subtraction-3">
+                            <use xlink:href="/images/icons/icons.svg#icon-Subtraction-3">
+                            </use>
+                        </svg>Facebook ile giriş yap</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- modal end-->
+
+    <!-- blog-inner section -->
+    <section id="blog__inner">
+        <div class="container">
+            <div class="blog__inner__wrapper">
+                <div class="blog__inner__top">
+                    <div class="blog__inner__title">
+                        <h1>
+                            Blog
+                        </h1>
+                        <h2>Blog</h2>
+                        <h6>info@antalya.property.com.tr</h6>
+                    </div>
+                    <div class="active__tab">
+                        <div class="active__tab__circle">
+                            <div class="circle__inner"></div>
+                        </div>
+                        <h4>
+                            Dünyadan emlak haberleri
+                        </h4>
+                    </div>
+                </div>
+                <div class="blog__inner__bottom">
+                    <div class="swiper-container gallery-top">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic3.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic2.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic1.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic3.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic2.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic1.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic3.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic2.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic1.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic3.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic2.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic1.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic1.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic1.png)"></div>
+
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next swiper-button-white"></div>
+                        <div class="swiper-button-prev swiper-button-white"></div>
+                    </div>
+                    <div class="swiper-container gallery-thumbs">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic3.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic3.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic3.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic3.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic3.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic3.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic3.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic3.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic3.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic3.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic3.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic3.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic3.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./images/panoramic3.png)"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <ul class="live__chat__btns">
+                <li class="whatsapp__btn">
+                    <button class="live__chat">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="images/icons/icons.svg#icon-whatsapp"></use>
+                            </svg>
+                        </a>
+                    </button>
+                </li>
+                <li class="telegram__btn">
+                    <button class="live__chat">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="images/icons/icons.svg#icon-telegram"></use>
+                            </svg>
+                        </a>
+                    </button>
+                </li>
+                <li class="messenger__btn">
+                    <button class="live__chat">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="images/icons/icons.svg#icon-messenger"></use>
+                            </svg>
+                        </a>
+                    </button>
+                </li>
+                <li class="chat__btn">
+                    <button class="live__chat">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="images/icons/icons.svg#icon-live-chat"></use>
+                            </svg>
+                        </a>
+                    </button>
+                </li>
+                <li class="close__btn">
+                    <button class="live__chat">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="images/icons/icons.svg#icon-close-sign"></use>
+                            </svg>
+                        </a>
+                    </button>
+                </li>
+
+            </ul>
+        </div>
+        <div class="mobile__nav">
+            <div class="container">
+                <div class="nav__wrapper">
+                    <button>
+                        <svg>
+                            <use xlink:href="images/icons/icons.svg#icon-house"></use>
+                        </svg>
+                        <a href="#">
+                            Ana sayfa
+                        </a>
+                    </button>
+                    <button>
+                        <svg>
+                            <use xlink:href="images/icons/icons.svg#icon-search"></use>
+                        </svg>
+                        <a href="#">
+                            arama
+                        </a>
+                    </button>
+                    <button>
+                        <svg>
+                            <use xlink:href="images/icons/icons.svg#icon-portfolio"></use>
+                        </svg>
+                        <a href="#">
+                            portföy
+                        </a>
+                    </button>
+                    <button>
+                        <svg>
+                            <use xlink:href="images/icons/icons.svg#icon-favorite"></use>
+                        </svg>
+                        <a href="#">
+                            kayıt
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- save section -->
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer-item">
+                    <div class="footer-logo">
+                        <img src="images/logo-footer.png" alt="">
+                    </div>
+                    <div class="footer-text">
+                        <p>Antalya property No11111 nnumarasıyla Türkiye kanunları çerçevesinde,bünyesinde barındırdığı
+                            gayrimenkul eğitimli danışmanlarıyla hizmet vermektedir</p>
+                    </div>
+                    <div class="footer-copyright">
+                        <span>© Copyright Antalya Property Ltd 2020</span>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <ul class="footer-list">
+                        <li><a href="index.html">Ana sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="portfolio.html">Portföy</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h6>İletişime geç</h6>
+                    <ul class="footer-contacts">
+                        <li><a href="#"><svg class="icon icon-place">
+                                    <use xlink:href="images/icons/icons.svg#icon-place"></use>
+                                </svg>Fatih, Esenler , İstanbul</a></li>
+                        <li><svg class="icon icon-email">
+                                <use xlink:href="images/icons/icons.svg#icon-email"></use>
+                            </svg><a href="#">Info@antalyaproperty.tr</a></li>
+                        <li><svg class="icon icon-phone-call">
+                                <use xlink:href="images/icons/icons.svg#icon-phone-call"></use>
+                            </svg><a href="#">9020 7837 6433</a>
+                            <a href="#">9045 6434 6433</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h6>Bizi buradan izleyin</h6>
+                    <ul class="footer-social">
+                        <li><a href="#"><svg class="icon icon-instagram">
+                                    <use xlink:href="images/icons/icons.svg#icon-instagram"></use>
+                                </svg></a></li>
+                        <li><a href="#"><svg class="icon icon-facebook">
+                                    <use xlink:href="images/icons/icons.svg#icon-facebook"></use>
+                                </svg></a></li>
+                        <li><a href="#"><svg class="icon icon-linkedin">
+                                    <use xlink:href="images/icons/icons.svg#icon-linkedin"></use>
+                                </svg></a></li>
+                        <li><a href="#"><svg class="icon icon-twitter">
+                                    <use xlink:href="images/icons/icons.svg#icon-twitter"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/blog-inner.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+
+</html>
