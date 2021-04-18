@@ -45,6 +45,18 @@ footer {
   width: 100%;
 }
 
+header .header-navbar .change-language .dropdown .dropdown-toggle {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+header .header-navbar .change-language .dropdown .dropdown-toggle:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
 #services {
   background: url("../images/services/servicesBg.png");
   width: 100%;
@@ -619,30 +631,21 @@ footer {
     background-size: cover;
     overflow-x: hidden;
   }
-  #what__we__do .free__services__items {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-  }
   #what__we__do .line__items {
     text-align: unset !important;
-    background: url("../images/services/Group1037.png");
-    width: 100%;
-    height: 1500px !important;
-    background-repeat: no-repeat;
-    background-size: contain;
+    position: relative;
   }
-  #what__we__do .line__items img {
+  #what__we__do .line__items .img-1 {
     display: none;
   }
+  #what__we__do .line__items .img-2 {
+    display: block !important;
+  }
   #what__we__do .line__items .work__item {
-    position: relative !important;
     left: unset !important;
     right: unset !important;
     top: unset !important;
     text-align: unset !important;
-    margin-bottom: 100px;
   }
   #what__we__do .line__items .work__item .circle__white {
     top: 0 !important;
@@ -672,29 +675,38 @@ footer {
   #what__we__do .line__items .work__item__seven .circle__white {
     left: -50px !important;
   }
+  #what__we__do .line__items .work__item__one {
+    top: 0 !important;
+  }
   #what__we__do .line__items .work__item__two {
-    top: 5% !important;
-    right: 40% !important;
+    top: 18% !important;
+    right: 8% !important;
   }
   #what__we__do .line__items .work__item__three {
-    top: 10% !important;
-    left: 5% !important;
+    top: 35% !important;
+    left: 8% !important;
   }
   #what__we__do .line__items .work__item__four {
-    top: 15% !important;
-    right: 40% !important;
+    top: 50% !important;
+    right: 8% !important;
   }
   #what__we__do .line__items .work__item__five {
-    top: 15% !important;
+    top: 68% !important;
+    left: 8%;
   }
   #what__we__do .line__items .work__item__six {
-    top: 25% !important;
-    right: 40% !important;
+    bottom: 10% !important;
+    right: 8% !important;
   }
   #what__we__do .line__items .work__item__seven {
-    top: 25% !important;
+    bottom: -6% !important;
+    left: 10% !important;
   }
   #what__we__do .free__services__items {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -705,21 +717,6 @@ footer {
   }
 }
 
-@media (max-width: 768.98px) {
-  #what__we__do .line__items .work__item__two {
-    right: 20% !important;
-  }
-  #what__we__do .line__items .work__item__three {
-    left: 5% !important;
-  }
-  #what__we__do .line__items .work__item__four {
-    right: 20% !important;
-  }
-  #what__we__do .line__items .work__item__six {
-    right: 20%  !important;
-  }
-}
-
 @media (max-width: 575px) {
   .live__chat {
     bottom: 75% !important;
@@ -727,30 +724,102 @@ footer {
   .mobile__nav {
     display: block !important;
   }
-  #what__we__do .line__items {
-    height: 2000px !important;
+  #what__we__do .line__items .work__item__two,
+  #what__we__do .line__items .work__item__four,
+  #what__we__do .line__items .work__item__six {
+    right: 100px !important;
+    text-align: right !important;
+  }
+  #what__we__do .line__items .work__item__two .circle__white,
+  #what__we__do .line__items .work__item__four .circle__white,
+  #what__we__do .line__items .work__item__six .circle__white {
+    right: -50px !important;
+    left: unset !important;
+  }
+  #what__we__do .line__items .work__item__one,
+  #what__we__do .line__items .work__item__three,
+  #what__we__do .line__items .work__item__five,
+  #what__we__do .line__items .work__item__seven {
+    left: 50px !important;
+    text-align: left !important;
+  }
+  #what__we__do .line__items .work__item__one .circle__white,
+  #what__we__do .line__items .work__item__three .circle__white,
+  #what__we__do .line__items .work__item__five .circle__white,
+  #what__we__do .line__items .work__item__seven .circle__white {
+    left: -50px !important;
+  }
+  #what__we__do .line__items .work__item__one {
+    top: 0 !important;
   }
   #what__we__do .line__items .work__item__two {
-    right: 15% !important;
-    top: 0 !important;
+    top: 18% !important;
+    right: 8% !important;
   }
   #what__we__do .line__items .work__item__three {
-    left: 5% !important;
-    top: 0 !important;
+    top: 35% !important;
+    left: 8% !important;
   }
   #what__we__do .line__items .work__item__four {
-    right: 15% !important;
-    top: 0 !important;
+    top: 50% !important;
+    right: 8% !important;
   }
   #what__we__do .line__items .work__item__five {
-    top: 0 !important;
+    top: 68% !important;
+    left: 8%;
   }
   #what__we__do .line__items .work__item__six {
-    right: 15%  !important;
-    top: 0 !important;
+    bottom: 10% !important;
+    right: 8% !important;
   }
   #what__we__do .line__items .work__item__seven {
+    bottom: -6% !important;
+    left: 10% !important;
+  }
+}
+
+@media (max-width: 400px) {
+  #what__we__do .line__items .work__item h4 {
+    font-size: 20px !important;
+  }
+  #what__we__do .line__items .work__item p {
+    font-size: 12px !important;
+  }
+  #what__we__do .line__items .work__item .circle__white {
+    width: 20px !important;
+    height: 20px !important;
     top: 0 !important;
+  }
+  #what__we__do .line__items .work__item .circle__white .circle__inner {
+    width: 12px !important;
+    height: 12px !important;
+  }
+  #what__we__do .line__items .work__item__one {
+    top: 0 !important;
+  }
+  #what__we__do .line__items .work__item__two {
+    top: 18% !important;
+    right: 14% !important;
+  }
+  #what__we__do .line__items .work__item__three {
+    top: 35% !important;
+    left: 14% !important;
+  }
+  #what__we__do .line__items .work__item__four {
+    top: 50% !important;
+    right: 14% !important;
+  }
+  #what__we__do .line__items .work__item__five {
+    top: 68% !important;
+    left: 14%;
+  }
+  #what__we__do .line__items .work__item__six {
+    bottom: 7% !important;
+    right: 17% !important;
+  }
+  #what__we__do .line__items .work__item__seven {
+    bottom: -12% !important;
+    left: 18% !important;
   }
 }
 /*# sourceMappingURL=services.css.map */

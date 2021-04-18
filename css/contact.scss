@@ -269,6 +269,9 @@ footer {
   background: #00142b;
   padding: 34px 0 26px 0;
   width: 100%;
+  &::before {
+    display: none;
+  }
   .footer__wrapper {
     color: #ffffff;
     display: flex;
@@ -383,6 +386,7 @@ footer {
     &::before {
       content: "";
       position: absolute;
+      display: block !important;
       top: 0;
       left: 0;
       width: 100%;
@@ -390,7 +394,7 @@ footer {
       background: url("../images/MaskGroup3.png");
       background-repeat: no-repeat;
       background-size: cover;
-      z-index: 1 !important;
+      z-index: -1 !important;
     }
     .footer__wrapper {
       .footer__left {
