@@ -130,6 +130,33 @@ header {
           .swiper-slide {
             height: 557px;
             border-radius: 10px;
+            span {
+              position: absolute;
+              bottom: 13px;
+              left: 20px;
+              color: #ffffff;
+              font-size: 14px;
+            }
+            .full-size {
+              position: absolute;
+              right: 16px;
+              top: 17px;
+              border-radius: 5px;
+              cursor: pointer;
+              background: #ffffff;
+              width: 30px;
+              height: 30px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              svg {
+                width: 16px;
+                height: 15px;
+              }
+            }
+            .modal__img {
+              
+            }
           }
         }
         .gallery-thumbs {
@@ -301,6 +328,8 @@ header {
               height: 21px;
             }
             span {
+              font-size: 16px;
+              color: #001136;
             }
           }
         }
@@ -331,7 +360,8 @@ header {
         justify-content: space-between;
         .different__news {
           display: flex;
-          .left, .right {
+          .left,
+          .right {
             .main__img {
               position: relative;
               img {
@@ -487,7 +517,6 @@ header {
                 }
                 &:last-child {
                   border-bottom: 0.5px solid rgba(0, 17, 54, 0.2);
-
                 }
               }
             }
@@ -567,8 +596,48 @@ header {
 @media (max-width: 1199.98px) {
 }
 @media (max-width: 991.98px) {
+  .blog__inner__top {
+    flex-direction: column;
+    align-items: baseline !important;
+    .blog__inner__title {
+      margin-bottom: 32px;
+    }
+  }
+  .additional__features {
+    .features {
+      flex-wrap: wrap;
+      .feature__item {
+        width: 50%;
+      }
+    }
+  }
+  .news {
+    .news__wrapper {
+      flex-direction: column !important;
+      .different__news,
+      .other__news {
+        width: 100% !important;
+      }
+      .different__news {
+        .right {
+          display: none;
+        }
+        .left {
+          width: 100%;
+        }
+      }
+      .other__news {
+        margin-left: 0 !important;
+      }
+    }
+  }
 }
 @media (max-width: 575px) {
+  #main {
+    background: url("../images/blog-inner/Group12.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .live__chat {
     bottom: 75% !important;
   }
