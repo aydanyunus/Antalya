@@ -113,6 +113,7 @@ $(function () {
     $(".headet-mobile-filter").toggleClass("header-mobile-filter-active");
   });
   $(".nav__wrapper button").click(function () {
+    $('.nav__wrapper button.active-wrapper-nav').removeClass('active-wrapper-nav')
     $(this).addClass("active-wrapper-nav");
   });
   if ($("#morefiltre .select2-selection__rendered").text().length > 40) {

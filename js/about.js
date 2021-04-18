@@ -71,3 +71,4 @@ for (let i = 0, len = btnTab.length; i < len; i++) {
 }
 
 tabCurrent(btnTab[indexOpen]);
+

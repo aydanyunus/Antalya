@@ -27,10 +27,10 @@
                     <ul>
                         <li><a class="navbar-list-active" href="index.html">Ana sayfa</a></li>
                         <li><a href="about.html">Hakkımızda</a></li>
-                        <li><a href="#">Portföy</a></li>
-                        <li><a href="#">Hizmetler</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">İletişim</a></li>
+                        <li><a href="portfolio.html">Portföy</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
                     </ul>
                 </div>
                 <div class="change-language">
@@ -63,11 +63,12 @@
             <div class="mobile-header--nav">
                 <div class="mobile-top">
                     <div class="login">
-                        <a href="#" data-toggle="modal" data-target="#login-modal">Giriş <img src="images/arrow-right.svg" alt=""></a>
+                        <a href="#" data-toggle="modal" data-target="#login-modal">Giriş <img
+                                src="images/arrow-right.svg" alt=""></a>
                     </div>
                     <div class="header-mobile-burger">
                         <svg class="icon icon-close">
-                            <use xlink:href="/images/icons/icons.svg#icon-close">
+                            <use xlink:href="images/icons/icons.svg#icon-close-sign">
                             </use>
                         </svg>
                     </div>
@@ -77,10 +78,10 @@
                         <ul>
                             <li><a class="navbar-list-active" href="index.html">Ana sayfa</a></li>
                             <li><a href="about.html">Hakkımızda</a></li>
-                            <li><a href="#">Portföy</a></li>
-                            <li><a href="#">Hizmetler</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">İletişim</a></li>
+                            <li><a href="portfolio.html">Portföy</a></li>
+                            <li><a href="services.html">Hizmetler</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">İletişim</a></li>
                         </ul>
                     </div>
                 </div>
@@ -104,15 +105,29 @@
                 <div class="mobile-contact">
                     <h6>İletişime geç</h6>
                     <ul class="footer-contacts">
-                        <li><a href="#"><svg class="icon icon-place">
-                                    <use xlink:href="/images/icons/icons.svg#icon-place"></use>
-                                </svg>Fatih, Esenler , İstanbul</a></li>
-                        <li><svg class="icon icon-email">
-                                <use xlink:href="/images/icons/icons.svg#icon-email"></use>
-                            </svg><a href="#">Info@antalyaproperty.tr</a></li>
-                        <li><svg class="icon icon-phone-call">
-                                <use xlink:href="/images/icons/icons.svg#icon-phone-call"></use>
-                            </svg>
+                        <li>
+                            <div class="svg">
+                                <svg class="icon icon-place">
+                                    <use xlink:href="images/icons/icons.svg#icon-place-black"></use>
+                                </svg>
+                            </div>
+                            <a href="#">Fatih, Esenler , İstanbul</a>
+                        </li>
+                        <li>
+                            <div class="svg">
+                                <svg class="icon icon-email">
+                                    <use xlink:href="images/icons/icons.svg#icon-email-black"></use>
+                                </svg>
+                            </div>
+                            <a href="#">Info@antalyaproperty.tr</a>
+                        </li>
+                        <li>
+                            <div class="svg">
+                                <svg class="icon icon-phone-call">
+                                    <use xlink:href="images/icons/icons.svg#icon-phone-call-black"></use>
+                                </svg>
+                            </div>
+
                             <span>
                                 <a href="#">9020 7837 6433</a>
                                 <a href="#">9045 6434 6433</a>
@@ -363,7 +378,161 @@
             </div>
             <div class="headet-mobile-filter">
                 <form action="">
-                    <div class="filter-items">
+                    <div class="filter">
+                        <h4>Filtre</h4>
+                        <div class="rent__filter">
+                            <div class="rent__filter__item rent__filter__item__active">
+
+                                <h5>
+                                    Satılık
+                                </h5>
+                                <div>
+                                    <svg>
+                                        <use xlink:href="images/icons/icons.svg#icon-city"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="rent__filter__item">
+                                <h5>
+                                    Kiralık
+                                </h5>
+                                <div>
+                                    <svg>
+                                        <use xlink:href="images/icons/icons.svg#icon-buildings"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="rent__filter__item">
+                                <h5>
+                                    Kelepir
+                                </h5>
+                                <div>
+                                    <svg>
+                                        <use xlink:href="images/icons/icons.svg#icon-contract"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="rent__filter__item">
+                                <h5>
+                                    Proje
+                                </h5>
+                                <div>
+                                    <svg>
+                                        <use xlink:href="images/icons/icons.svg#icon-blueprint"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property__type">
+                            <h4>Emlak tipi</h4>
+                            <div class="dropdown dropdown__property">
+                                <button class="btn btn__property dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Hepsi
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-property" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item dropdown-item-property" href="#">
+                                        <svg>
+                                            <use xlink:href="images/icons/icons.svg#icon-condominium"></use>
+                                        </svg>
+                                        Daire
+                                    </a>
+                                    <a class="dropdown-item dropdown-item-property" href="#">
+                                        <svg>
+                                            <use xlink:href="images/icons/icons.svg#icon-home"></use>
+                                        </svg>
+                                        Villa</a>
+                                    <a class="dropdown-item dropdown-item-property" href="#">
+                                        <svg>
+                                            <use xlink:href="images/icons/icons.svg#icon-placeholder"></use>
+                                        </svg>
+                                        Arsa</a>
+                                    <a class="dropdown-item dropdown-item-property" href="#">
+                                        <svg>
+                                            <use xlink:href="images/icons/icons.svg#icon-condominium"></use>
+                                        </svg>
+                                        İşyeri</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <h4>Konum </h4>
+                            <div class="dropdown dropdown__location">
+                                <button class="btn btn__location dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Konum seç
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-location" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item dropdown-item-location" href="#">
+                                        Hepsi
+                                    </a>
+                                    <a class="dropdown-item dropdown-item-location" href="#">Villa</a>
+                                    <a class="dropdown-item dropdown-item-location" href="#">Arsa</a>
+                                    <a class="dropdown-item dropdown-item-location" href="#">İşyeri</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rooms">
+                            <h4>
+                                Oda sayı
+                            </h4>
+                            <div class="number__of__rooms">
+                                <span>
+                                    1+1
+                                </span>
+                                <span class="selected__room">
+                                    2+1
+                                </span>
+                                <span>
+                                    3+1
+                                </span>
+                                <span>
+                                    4+1
+                                </span>
+                                <span>
+                                    5+1
+                                </span>
+                            </div>
+
+                        </div>
+                        <div class="price__range">
+                            <h4>Fiyat aralığı</h4>
+                            <div id="slider-range-2">
+                                <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
+                                    <input type="text" id="amount-1" readonly>
+                                </span>
+                                <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
+                                    <input type="text" id="amount-2" readonly>
+
+                                </span>
+                            </div>
+                        </div>
+                        <div class="metr__range">
+                            <h4>M<sup>2</sup></h4>
+                            <div id="slider-range">
+                                <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
+                                    <input type="text" id="amount1" readonly>
+                                </span>
+                                <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
+                                    <input type="text" id="amount2" readonly>
+
+                                </span>
+                            </div>
+                        </div>
+                        <div class="filter-id">
+                            <label for="">Emlad ID:</label>
+                            <input type="text" class="form-control" placeholder="Aradığınız emlakın ID-sini girin"
+                                aria-label="text" aria-describedby="basic-addon1">
+                        </div>
+                        <button class="search__btn">
+                            <a href="#">
+                                Ara
+                            </a>
+                        </button>
+                    </div>
+                    <!-- <div class="filter-items">
                         <div class="item">
                             <h5>
                                 Satılık
@@ -482,7 +651,7 @@
                         <input type="text" class="form-control" placeholder="Aradığınız emlakın ID-sini girin"
                             aria-label="text" aria-describedby="basic-addon1">
                     </div>
-                    <a href="#" class="filter-submit">Submit</a>
+                    <a href="#" class="filter-submit">Submit</a> -->
                 </form>
             </div>
             <ul class="live__chat__btns">
@@ -540,7 +709,7 @@
                             <svg>
                                 <use xlink:href="/images/icons/icons.svg#icon-house"></use>
                             </svg>
-                            <a href="#">
+                            <a href="index.html">
                                 Ana sayfa
                             </a>
                         </button>
@@ -556,7 +725,7 @@
                             <svg>
                                 <use xlink:href="/images/icons/icons.svg#icon-portfolio"></use>
                             </svg>
-                            <a href="#">
+                            <a href="portfolio.html">
                                 portföy
                             </a>
                         </button>
@@ -564,7 +733,7 @@
                             <svg>
                                 <use xlink:href="/images/icons/icons.svg#icon-favorite"></use>
                             </svg>
-                            <a href="#">
+                            <a href="save.html">
                                 kayıt
                             </a>
                         </button>
@@ -983,12 +1152,12 @@
                 </div>
                 <div class="footer-item">
                     <ul class="footer-list">
-                        <li><a href="#">Ana sayfa</a></li>
-                        <li><a href="#">Hakkımızda</a></li>
-                        <li><a href="#">Portföy</a></li>
-                        <li><a href="#">Hizmetler</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">İletişim</a></li>
+                        <li><a href="index.html">Ana sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="portfolio.html">Portföy</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
                     </ul>
                 </div>
                 <div class="footer-item">
@@ -1040,7 +1209,9 @@
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/owl.carousel.js"></script>
+    <script src="js/current.js"></script>
     <script src="js/chat.js"></script>
+    <script src="js/filter.js"></script>
     <script src="js/index.js"></script>
 </body>
 
