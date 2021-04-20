@@ -119,12 +119,11 @@ header {
           width: 100%;
           margin-left: auto;
           margin-right: auto;
+          .swiper-slide {
+            background-size: cover;
+            background-position: center;
+          }
         }
-        .swiper-slide {
-          background-size: cover;
-          background-position: center;
-        }
-
         .gallery-top {
           width: 100%;
           .swiper-slide {
@@ -154,24 +153,82 @@ header {
                 height: 15px;
               }
             }
-            .modal__img {
-              
-            }
           }
         }
         .gallery-thumbs {
           box-sizing: border-box;
           padding: 10px 0;
+          .swiper-slide {
+            position: relative;
+            width: 92px;
+            height: 92px !important;
+            background-size: cover;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 1;
+            border: 2px solid #ffffff;
+            &:first-child,
+            &:last-child {
+              opacity: 0.5;
+            }
+          }
+          .swiper__btn__wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 40px;
+            .swiper-button-arrow-left,
+            .swiper-button-arrow-right {
+              opacity: 1 !important;
+              border: 1px solid #001136;
+              width: 34px;
+              height: 34px;
+              text-align: center;
+              border-radius: 10px;
+              z-index: 999 !important;
+              svg {
+                width: 16px;
+                height: 11px;
+              }
+            }
+            .swiper-button-arrow-left {
+              background: transparent;
+              margin-left: 21px;
+            }
+            .swiper-button-arrow-right {
+              background: #001136;
+              margin-right: 21px;
+            }
+          }
+          .swiper-slide-thumb-active {
+            border: 2px solid #3259fc;
+            opacity: 1;
+          }
         }
-        .gallery-thumbs .swiper-slide {
-          width: 92px;
-          height: 92px !important;
-          opacity: 0.4;
-          background-size: cover;
-          border-radius: 10px;
+        .swiper-button-next,
+        .swiper-button-prev {
+          display: none;
         }
-        .gallery-thumbs .swiper-slide-thumb-active {
-          opacity: 1;
+      }
+    }
+  }
+  .swiper-modal {
+    .swiper-modal-dialog {
+      width: 90%;
+      max-width: 90%;
+      .swiper-modal-content {
+        .modal-header{
+          border-bottom: 0;
+        }
+        .modal-body {
+          img {
+            width: 100%;
+            max-width: 100%;
+          }
+
         }
       }
     }
@@ -594,8 +651,19 @@ header {
   }
 }
 @media (max-width: 1199.98px) {
+  .swiper-button-arrow-left {
+    margin-left: 13px !important;
+  }
+  .swiper-button-arrow-right {
+    margin-right: 13px !important;
+  }
 }
 @media (max-width: 991.98px) {
+  .swiper-slide {
+    .full-size {
+      display: none !important;
+    }
+  }
   .blog__inner__top {
     flex-direction: column;
     align-items: baseline !important;
@@ -610,6 +678,12 @@ header {
         width: 50%;
       }
     }
+  }
+  .swiper-button-arrow-left {
+    margin-left: 60px !important;
+  }
+  .swiper-button-arrow-right {
+    margin-right: 60px !important;
   }
   .news {
     .news__wrapper {
@@ -632,6 +706,14 @@ header {
     }
   }
 }
+@media (max-width: 767px) {
+  .swiper-button-arrow-left {
+    margin-left: 40px !important;
+  }
+  .swiper-button-arrow-right {
+    margin-right: 40px !important;
+  }
+}
 @media (max-width: 575px) {
   #main {
     background: url("../images/blog-inner/Group12.png");
@@ -643,5 +725,29 @@ header {
   }
   .mobile__nav {
     display: block !important;
+  }
+}
+@media (max-width: 500px) {
+  .swiper-button-arrow-left {
+    margin-left: 28px !important;
+  }
+  .swiper-button-arrow-right {
+    margin-right: 28px !important;
+  }
+}
+@media (max-width: 375px) {
+  .swiper-button-arrow-left {
+    margin-left: 20px !important;
+  }
+  .swiper-button-arrow-right {
+    margin-right: 20px !important;
+  }
+}
+@media (max-width: 320px) {
+  .swiper-button-arrow-left {
+    margin-left: 13px !important;
+  }
+  .swiper-button-arrow-right {
+    margin-right: 13px !important;
   }
 }
