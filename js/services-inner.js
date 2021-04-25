@@ -5,34 +5,41 @@ $(document).ready(function () {
         responsiveClass: true,
         mouseDrag: true,
         stagePadding: 50,
-        dots: false,
+        loop: false,
+        dots: true,
+        dotsEach: true,
+        nav: true,
+        navText: [
+            "<svg><use xlink:href='images/icons/icons.svg#icon-arrow-left'></use></svg>",
+            "<svg><use xlink:href='images/icons/icons.svg#icon-arrow'></use></svg>",
+        ],
         responsive: {
             0: {
                 items: 1,
-                nav: true
+                nav: true,
+                dots: true
             },
             600: {
                 items: 1,
-                nav: false
+                nav: true,
+                dots: true
+
             },
             1000: {
-                items: 1,
+                items: 3,
                 nav: true,
-                loop: false
+                dots: true
+
             }
         }
     })
 
-    $(".owl-nav div").on('click', function (e) {
-        $(".owl-nav").find("li").removeClass("active");
-        $(this).addClass("active");
-        var jumpTo = $(this).index();
-        carousel.trigger('to.owl.carousel', [jumpTo]);
-    });
 
 
     $(".other__services .other__services__item").on("click", function () {
         $(".other__services .other__services__item").removeClass("active");
         $(this).addClass("active");
-    });
+    });  
+
+
 });

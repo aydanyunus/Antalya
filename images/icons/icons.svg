@@ -970,6 +970,14 @@
 <path d="M13.887 25.486c0 0.858-0.696 1.554-1.554 1.554s-1.554-0.696-1.554-1.554c0-0.858 0.696-1.554 1.554-1.554s1.554 0.696 1.554 1.554z"></path>
 <path d="M13.887 13.054c0 0.858-0.696 1.554-1.554 1.554s-1.554-0.696-1.554-1.554c0-0.858 0.696-1.554 1.554-1.554s1.554 0.696 1.554 1.554z"></path>
 </symbol>
+
+<symbol id="icon-full-img" viewBox="0 0 33 32">
+<path stroke-linejoin="round" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.6056" d="M21.389 1.803h10.233v9.328"></path>
+<path stroke-linejoin="round" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.6056" d="M21.389 30.199h10.233v-9.328"></path>
+<path stroke-linejoin="round" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.6056" d="M12.039 1.803h-10.236v9.328"></path>
+<path stroke-linejoin="round" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.6056" d="M12.039 30.199h-10.236v-9.328"></path>
+</symbol>
+
     <!-- svg end -->
 </defs>
 </svg>
