@@ -5,13 +5,176 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/css/lightgallery.css" />
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/portfolio-main.css">
+    <link rel="stylesheet" href="css/portfolio.css">
     <title>Portfolio-main</title>
 </head>
 
 <body>
+    <header>
+        <div class="header">
+            <div class="header-navbar container">
+                <div class="logo"><img src="images/logo.png" alt=""></div>
+                <div class="nav">
+                    <ul>
+                        <li><a class="navbar-list-active" href="index.html">Ana sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="portfolio.html">Portföy</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="change-language">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dil <img src="images/turkey.png" alt="" class="change-lang-img"> <img
+                                src="images/arrow-down.svg" alt="">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Türkçe</a>
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">Pусский</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="login">
+                    <a href="#" data-toggle="modal" data-target="#login-modal">Giriş <img src="images/arrow-right.svg"
+                            alt=""></a>
+                </div>
+            </div>
+            <div class="header-mobile">
+                <div class="header-mobile-logo"><img src="./images/logo.png" alt=""></div>
+                <div class="header-mobile-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="mobile-header--nav">
+                <div class="mobile-top">
+                    <div class="login">
+                        <a href="#" data-toggle="modal" data-target="#login-modal">Giriş <img
+                                src="images/arrow-right.svg" alt=""></a>
+                    </div>
+                    <div class="header-mobile-burger">
+                        <svg class="icon icon-close">
+                            <use xlink:href="images/icons/icons.svg#icon-close-sign">
+                            </use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="mobile-nav">
+                    <div class="nav">
+                        <ul>
+                            <li><a class="navbar-list-active" href="index.html">Ana sayfa</a></li>
+                            <li><a href="about.html">Hakkımızda</a></li>
+                            <li><a href="portfolio.html">Portföy</a></li>
+                            <li><a href="services.html">Hizmetler</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">İletişim</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-language">
+                    <div class="change-language">
+                        <div class="dropdown">
+                            <h3>Dil</h3>
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="images/turkey.png" alt="" class="flags">Türkçe <img
+                                    src="images/arrow-down.svg" alt="" class="arrow-down">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Türkçe</a>
+                                <a class="dropdown-item" href="#">English</a>
+                                <a class="dropdown-item" href="#">Pусский</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-contact">
+                    <h6>İletişime geç</h6>
+                    <ul class="footer-contacts">
+                        <li>
+                            <div class="svg">
+                                <svg class="icon icon-place">
+                                    <use xlink:href="images/icons/icons.svg#icon-place-black"></use>
+                                </svg>
+                            </div>
+                            <a href="#">Fatih, Esenler , İstanbul</a>
+                        </li>
+                        <li>
+                            <div class="svg">
+                                <svg class="icon icon-email">
+                                    <use xlink:href="images/icons/icons.svg#icon-email-black"></use>
+                                </svg>
+                            </div>
+                            <a href="#">Info@antalyaproperty.tr</a>
+                        </li>
+                        <li>
+                            <div class="svg">
+                                <svg class="icon icon-phone-call">
+                                    <use xlink:href="images/icons/icons.svg#icon-phone-call-black"></use>
+                                </svg>
+                            </div>
+
+                            <span>
+                                <a href="#">9020 7837 6433</a>
+                                <a href="#">9045 6434 6433</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mobile__nav">
+                <div class="container">
+                    <div class="nav__wrapper">
+                        <button>
+                            <svg>
+                                <use xlink:href="/images/icons/icons.svg#icon-house"></use>
+                            </svg>
+                            <a href="index.html">
+                                Ana sayfa
+                            </a>
+                        </button>
+                        <button class="search-button">
+                            <svg>
+                                <use xlink:href="/images/icons/icons.svg#icon-search"></use>
+                            </svg>
+                            <a href="#">
+                                arama
+                            </a>
+                        </button>
+                        <button>
+                            <svg>
+                                <use xlink:href="/images/icons/icons.svg#icon-portfolio"></use>
+                            </svg>
+                            <a href="portfolio.html">
+                                portföy
+                            </a>
+                        </button>
+                        <button>
+                            <svg>
+                                <use xlink:href="/images/icons/icons.svg#icon-favorite"></use>
+                            </svg>
+                            <a href="save.html">
+                                kayıt
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
     <section>
         <div class="portfolio-main container">
             <div class="portfolio-main-left">
@@ -38,319 +201,944 @@
                         </div>
                     </div>
                 </div>
-                <div id="imageGallery">
-                    <li data-thumb="images/portfolio-main/1.png" data-src="images/img/largeImage.jpg">
-                        <div class="overlay">
-                            <div class="overlay-top">
-                                <div class="overlay-price">
-                                    <div class="ribbon__svg">
-                                        <svg>
-                                            <use xlink:href="images/icons/icons.svg#icon-Union-1">
+                <div>
+                    <ul id="imageGallery">
+                        <li data-thumb="images/portfolio-main/1.png" data-src="images/portfolio-main/main-1.png">
+                            <div class="overlay">
+                                <div class="overlay-top">
+                                    <div class="overlay-price">
+                                        <div class="ribbon__svg">
+                                            <svg>
+                                                <use xlink:href="images/icons/icons.svg#icon-Union-1">
 
-                                            </use>
-                                        </svg>
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="price__info">
+                                            <h6>Satılık</h6>
+                                            <h5 class="sale__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                            <h5 class="old__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                        </div>
                                     </div>
-                                    <div class="price__info">
-                                        <h6>Satılık</h6>
-                                        <h5 class="sale__price">
+                                    <div class="overlay-fullscreen"> <svg class="icon icon-fullscreen">
+                                            <use xlink:href="/images/icons/icons.svg#icon-fullscreen">
+                                            </use>
+                                        </svg></div>
+                                </div>
+                                <div class="overlay-bottom">
+                                    <p>Emlak kodu: 23346CRFG34</p>
+                                    <div class="overlay-bottom-buttons">
+                                        <a href="#" class="full-home"> <svg class="icon-Group-806">
+                                                <use xlink:href="images/icons/icons.svg#icon-Group-806">
+                                                </use>
+                                            </svg></a>
+                                        <a href="#" id="pop1btn" class="cd-popup-trigger" onclick="openpopup('pop1')">
                                             <svg>
-                                                <use xlink:href="images/icons/icons.svg#icon-tl"></use>
-                                            </svg>
-                                            1.500.00
-                                        </h5>
-                                        <h5 class="old__price">
-                                            <svg>
-                                                <use xlink:href="images/icons/icons.svg#icon-tl"></use>
-                                            </svg>
-                                            1.500.00
-                                        </h5>
+                                                <use xlink:href="images/icons/icons.svg#icon-pin">
+                                                </use>
+                                            </svg></a>
+                                        <a href="#" id="pop1btn" class="cd-popup-trigger"
+                                            onclick="openpopup('pop2')"><svg>
+                                                <use xlink:href="images/icons/icons.svg#icon-Group-781">
+                                                </use>
+                                            </svg></a>
                                     </div>
                                 </div>
-                                <div class="overlay-fullscreen"> <svg class="icon icon-fullscreen">
-                                        <use xlink:href="/images/icons/icons.svg#icon-fullscreen">
-                                        </use>
-                                    </svg></div>
                             </div>
-                            <div class="overlay-bottom">
-                                <p>Emlak kodu: 23346CRFG34</p>
-                            </div>
-                        </div>
-                        <img src="images/portfolio-main/main-1.png" />
-                    </li>
-                    <li data-thumb="images/portfolio-main/2.png" data-src="images/img/largeImage1.jpg">
-                        <div class="overlay">
-                            <div class="overlay-top">
-                                <div class="overlay-price">
-                                    <div class="ribbon__svg">
-                                        <svg>
-                                            <use xlink:href="images/icons/icons.svg#icon-Union-1">
+                            <img id="galleryfull" data-src="images/portfolio-main/main-1.png"
+                                src="images/portfolio-main/main-1.png" />
+                        </li>
+                        <li data-thumb="images/portfolio-main/2.png" data-src="images/portfolio-main/main-1.png">
+                            <div class="overlay">
+                                <div class="overlay-top">
+                                    <div class="overlay-price">
+                                        <div class="ribbon__svg">
+                                            <svg>
+                                                <use xlink:href="images/icons/icons.svg#icon-Union-1">
 
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="price__info">
+                                            <h6>Satılık</h6>
+                                            <h5 class="sale__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                            <h5 class="old__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="overlay-fullscreen"> <svg class="icon icon-fullscreen">
+                                            <use xlink:href="/images/icons/icons.svg#icon-fullscreen">
                                             </use>
-                                        </svg>
-                                    </div>
-                                    <div class="price__info">
-                                        <h6>Satılık</h6>
-                                        <h5 class="sale__price">
-                                            <svg>
-                                                <use xlink:href="images/icons/icons.svg#icon-tl"></use>
-                                            </svg>
-                                            1.500.00
-                                        </h5>
-                                        <h5 class="old__price">
-                                            <svg>
-                                                <use xlink:href="images/icons/icons.svg#icon-tl"></use>
-                                            </svg>
-                                            1.500.00
-                                        </h5>
-                                    </div>
+                                        </svg></div>
                                 </div>
-                                <div class="overlay-fullscreen"> <svg class="icon icon-fullscreen">
-                                        <use xlink:href="/images/icons/icons.svg#icon-fullscreen">
-                                        </use>
-                                    </svg></div>
+                                <div class="overlay-bottom">
+                                    <p>Emlak kodu: 23346CRFG34</p>
+                                </div>
                             </div>
-                            <div class="overlay-bottom">
-                                <p>Emlak kodu: 23346CRFG34</p>
-                            </div>
-                        </div>
-                        <img src="images/portfolio-main/main-1.png" />
-                    </li>
-                    <li data-thumb="images/portfolio-main/3.png" data-src="images/img/largeImage.jpg">
-                        <div class="overlay">
-                            <div class="overlay-top">
-                                <div class="overlay-price">
-                                    <div class="ribbon__svg">
-                                        <svg>
-                                            <use xlink:href="images/icons/icons.svg#icon-Union-1">
+                            <img data-src="images/portfolio-main/2.png" src="images/portfolio-main/2.png" />
+                        </li>
+                        <li data-thumb="images/portfolio-main/3.png" data-src="images/portfolio-main/main-1.png">
+                            <div class="overlay">
+                                <div class="overlay-top">
+                                    <div class="overlay-price">
+                                        <div class="ribbon__svg">
+                                            <svg>
+                                                <use xlink:href="images/icons/icons.svg#icon-Union-1">
 
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="price__info">
+                                            <h6>Satılık</h6>
+                                            <h5 class="sale__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                            <h5 class="old__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="overlay-fullscreen"> <svg class="icon icon-fullscreen">
+                                            <use xlink:href="/images/icons/icons.svg#icon-fullscreen">
                                             </use>
-                                        </svg>
-                                    </div>
-                                    <div class="price__info">
-                                        <h6>Satılık</h6>
-                                        <h5 class="sale__price">
-                                            <svg>
-                                                <use xlink:href="images/icons/icons.svg#icon-tl"></use>
-                                            </svg>
-                                            1.500.00
-                                        </h5>
-                                        <h5 class="old__price">
-                                            <svg>
-                                                <use xlink:href="images/icons/icons.svg#icon-tl"></use>
-                                            </svg>
-                                            1.500.00
-                                        </h5>
-                                    </div>
+                                        </svg></div>
                                 </div>
-                                <div class="overlay-fullscreen"> <svg class="icon icon-fullscreen">
-                                        <use xlink:href="/images/icons/icons.svg#icon-fullscreen">
-                                        </use>
-                                    </svg></div>
+                                <div class="overlay-bottom">
+                                    <p>Emlak kodu: 23346CRFG34</p>
+                                </div>
                             </div>
-                            <div class="overlay-bottom">
-                                <p>Emlak kodu: 23346CRFG34</p>
-                            </div>
-                        </div>
-                        <img src="images/portfolio-main/main-1.png" />
-                    </li>
-                    <li data-thumb="images/portfolio-main/1.png" data-src="images/img/largeImage.jpg">
-                        <div class="overlay">
-                            <div class="overlay-top">
-                                <div class="overlay-price">
-                                    <div class="ribbon__svg">
-                                        <svg>
-                                            <use xlink:href="images/icons/icons.svg#icon-Union-1">
+                            <img src="images/portfolio-main/main-1.png" />
+                        </li>
+                        <li data-thumb="images/portfolio-main/1.png" data-src="images/portfolio-main/main-1.png">
+                            <div class="overlay">
+                                <div class="overlay-top">
+                                    <div class="overlay-price">
+                                        <div class="ribbon__svg">
+                                            <svg>
+                                                <use xlink:href="images/icons/icons.svg#icon-Union-1">
 
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="price__info">
+                                            <h6>Satılık</h6>
+                                            <h5 class="sale__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                            <h5 class="old__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="overlay-fullscreen"> <svg class="icon icon-fullscreen">
+                                            <use xlink:href="/images/icons/icons.svg#icon-fullscreen">
                                             </use>
-                                        </svg>
-                                    </div>
-                                    <div class="price__info">
-                                        <h6>Satılık</h6>
-                                        <h5 class="sale__price">
-                                            <svg>
-                                                <use xlink:href="images/icons/icons.svg#icon-tl"></use>
-                                            </svg>
-                                            1.500.00
-                                        </h5>
-                                        <h5 class="old__price">
-                                            <svg>
-                                                <use xlink:href="images/icons/icons.svg#icon-tl"></use>
-                                            </svg>
-                                            1.500.00
-                                        </h5>
-                                    </div>
+                                        </svg></div>
                                 </div>
-                                <div class="overlay-fullscreen"> <svg class="icon icon-fullscreen">
-                                        <use xlink:href="/images/icons/icons.svg#icon-fullscreen">
-                                        </use>
-                                    </svg></div>
+                                <div class="overlay-bottom">
+                                    <p>Emlak kodu: 23346CRFG34</p>
+                                </div>
                             </div>
-                            <div class="overlay-bottom">
-                                <p>Emlak kodu: 23346CRFG34</p>
-                            </div>
-                        </div>
-                        <img src="images/portfolio-main/main-1.png" />
-                    </li>
-                    <li data-thumb="images/portfolio-main/2.png" data-src="images/img/largeImage1.jpg">
-                        <div class="overlay">
-                            <div class="overlay-top">
-                                <div class="overlay-price">
-                                    <div class="ribbon__svg">
-                                        <svg>
-                                            <use xlink:href="images/icons/icons.svg#icon-Union-1">
+                            <img src="images/portfolio-main/main-1.png" />
+                        </li>
+                        <li data-thumb="images/portfolio-main/2.png" data-src="images/portfolio-main/main-1.png">
+                            <div class="overlay">
+                                <div class="overlay-top">
+                                    <div class="overlay-price">
+                                        <div class="ribbon__svg">
+                                            <svg>
+                                                <use xlink:href="images/icons/icons.svg#icon-Union-1">
 
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="price__info">
+                                            <h6>Satılık</h6>
+                                            <h5 class="sale__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                            <h5 class="old__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="overlay-fullscreen"> <svg class="icon icon-fullscreen">
+                                            <use xlink:href="/images/icons/icons.svg#icon-fullscreen">
                                             </use>
-                                        </svg>
-                                    </div>
-                                    <div class="price__info">
-                                        <h6>Satılık</h6>
-                                        <h5 class="sale__price">
-                                            <svg>
-                                                <use xlink:href="images/icons/icons.svg#icon-tl"></use>
-                                            </svg>
-                                            1.500.00
-                                        </h5>
-                                        <h5 class="old__price">
-                                            <svg>
-                                                <use xlink:href="images/icons/icons.svg#icon-tl"></use>
-                                            </svg>
-                                            1.500.00
-                                        </h5>
-                                    </div>
+                                        </svg></div>
                                 </div>
-                                <div class="overlay-fullscreen"> <svg class="icon icon-fullscreen">
-                                        <use xlink:href="/images/icons/icons.svg#icon-fullscreen">
-                                        </use>
-                                    </svg></div>
+                                <div class="overlay-bottom">
+                                    <p>Emlak kodu: 23346CRFG34</p>
+                                </div>
                             </div>
-                            <div class="overlay-bottom">
-                                <p>Emlak kodu: 23346CRFG34</p>
-                            </div>
-                        </div>
-                        <img src="images/portfolio-main/main-1.png" />
-                    </li>
-                    <li data-thumb="images/portfolio-main/3.png" data-src="images/img/largeImage.jpg">
-                        <div class="overlay">
-                            <div class="overlay-top">
-                                <div class="overlay-price">
-                                    <div class="ribbon__svg">
-                                        <svg>
-                                            <use xlink:href="images/icons/icons.svg#icon-Union-1">
+                            <img src="images/portfolio-main/main-1.png" />
+                        </li>
+                        <li data-thumb="images/portfolio-main/3.png" data-src="images/portfolio-main/main-1.png">
+                            <div class="overlay">
+                                <div class="overlay-top">
+                                    <div class="overlay-price">
+                                        <div class="ribbon__svg">
+                                            <svg>
+                                                <use xlink:href="images/icons/icons.svg#icon-Union-1">
 
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="price__info">
+                                            <h6>Satılık</h6>
+                                            <h5 class="sale__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                            <h5 class="old__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="overlay-fullscreen"> <svg class="icon icon-fullscreen">
+                                            <use xlink:href="/images/icons/icons.svg#icon-fullscreen">
                                             </use>
-                                        </svg>
-                                    </div>
-                                    <div class="price__info">
-                                        <h6>Satılık</h6>
-                                        <h5 class="sale__price">
-                                            <svg>
-                                                <use xlink:href="images/icons/icons.svg#icon-tl"></use>
-                                            </svg>
-                                            1.500.00
-                                        </h5>
-                                        <h5 class="old__price">
-                                            <svg>
-                                                <use xlink:href="images/icons/icons.svg#icon-tl"></use>
-                                            </svg>
-                                            1.500.00
-                                        </h5>
-                                    </div>
+                                        </svg></div>
                                 </div>
-                                <div class="overlay-fullscreen"> <svg class="icon icon-fullscreen">
-                                        <use xlink:href="/images/icons/icons.svg#icon-fullscreen">
-                                        </use>
-                                    </svg></div>
+                                <div class="overlay-bottom">
+                                    <p>Emlak kodu: 23346CRFG34</p>
+                                </div>
                             </div>
-                            <div class="overlay-bottom">
-                                <p>Emlak kodu: 23346CRFG34</p>
-                            </div>
-                        </div>
-                        <img src="images/portfolio-main/main-1.png" />
-                    </li>
-                    <li data-thumb="images/portfolio-main/1.png" data-src="images/img/largeImage.jpg">
-                        <div class="overlay">
-                            <div class="overlay-top">
-                                <div class="overlay-price">
-                                    <div class="ribbon__svg">
-                                        <svg>
-                                            <use xlink:href="images/icons/icons.svg#icon-Union-1">
+                            <img src="images/portfolio-main/main-1.png" />
+                        </li>
+                        <li data-thumb="images/portfolio-main/1.png" data-src="images/portfolio-main/main-1.png">
+                            <div class="overlay">
+                                <div class="overlay-top">
+                                    <div class="overlay-price">
+                                        <div class="ribbon__svg">
+                                            <svg>
+                                                <use xlink:href="images/icons/icons.svg#icon-Union-1">
 
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="price__info">
+                                            <h6>Satılık</h6>
+                                            <h5 class="sale__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                            <h5 class="old__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="overlay-fullscreen"> <svg class="icon icon-fullscreen">
+                                            <use xlink:href="/images/icons/icons.svg#icon-fullscreen">
                                             </use>
-                                        </svg>
-                                    </div>
-                                    <div class="price__info">
-                                        <h6>Satılık</h6>
-                                        <h5 class="sale__price">
-                                            <svg>
-                                                <use xlink:href="images/icons/icons.svg#icon-tl"></use>
-                                            </svg>
-                                            1.500.00
-                                        </h5>
-                                        <h5 class="old__price">
-                                            <svg>
-                                                <use xlink:href="images/icons/icons.svg#icon-tl"></use>
-                                            </svg>
-                                            1.500.00
-                                        </h5>
-                                    </div>
+                                        </svg></div>
                                 </div>
-                                <div class="overlay-fullscreen"> <svg class="icon icon-fullscreen">
-                                        <use xlink:href="/images/icons/icons.svg#icon-fullscreen">
-                                        </use>
-                                    </svg></div>
+                                <div class="overlay-bottom">
+                                    <p>Emlak kodu: 23346CRFG34</p>
+                                </div>
                             </div>
-                            <div class="overlay-bottom">
-                                <p>Emlak kodu: 23346CRFG34</p>
-                            </div>
-                        </div>
-                        <img src="images/portfolio-main/main-1.png" />
-                    </li>
-                    <li data-thumb="images/portfolio-main/2.png" data-src="images/img/largeImage1.jpg">
-                        <div class="overlay">
-                            <div class="overlay-top">
-                                <div class="overlay-price">
-                                    <div class="ribbon__svg">
-                                        <svg>
-                                            <use xlink:href="images/icons/icons.svg#icon-Union-1">
+                            <img src="images/portfolio-main/main-1.png" />
+                        </li>
+                        <li data-thumb="images/portfolio-main/2.png" data-src="images/portfolio-main/main-1.png">
+                            <div class="overlay">
+                                <div class="overlay-top">
+                                    <div class="overlay-price">
+                                        <div class="ribbon__svg">
+                                            <svg>
+                                                <use xlink:href="images/icons/icons.svg#icon-Union-1">
 
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="price__info">
+                                            <h6>Satılık</h6>
+                                            <h5 class="sale__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                            <h5 class="old__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="overlay-fullscreen"> <svg class="icon icon-fullscreen">
+                                            <use xlink:href="/images/icons/icons.svg#icon-fullscreen">
                                             </use>
-                                        </svg>
-                                    </div>
-                                    <div class="price__info">
-                                        <h6>Satılık</h6>
-                                        <h5 class="sale__price">
-                                            <svg>
-                                                <use xlink:href="images/icons/icons.svg#icon-tl"></use>
-                                            </svg>
-                                            1.500.00
-                                        </h5>
-                                        <h5 class="old__price">
-                                            <svg>
-                                                <use xlink:href="images/icons/icons.svg#icon-tl"></use>
-                                            </svg>
-                                            1.500.00
-                                        </h5>
-                                    </div>
+                                        </svg></div>
                                 </div>
-                                <div class="overlay-fullscreen"> <svg class="icon icon-fullscreen">
-                                        <use xlink:href="/images/icons/icons.svg#icon-fullscreen">
-                                        </use>
-                                    </svg></div>
+                                <div class="overlay-bottom">
+                                    <p>Emlak kodu: 23346CRFG34</p>
+                                </div>
                             </div>
-                            <div class="overlay-bottom">
-                                <p>Emlak kodu: 23346CRFG34</p>
-                            </div>
-                        </div>
-                        <img src="images/portfolio-main/main-1.png" />
-                    </li>
+                            <img src="images/portfolio-main/main-1.png" />
+                        </li>
+                    </ul>
+
                 </div>
+                <ul class="portfolio-left-icons">
+                    <li><a href="#"><span>
+                                <div><svg class="icon icon-address">
+                                        <use xlink:href="/images/icons/icons.svg#icon-address"></use>
+                                    </svg></div>
+                                <p>Konum</p>
+                            </span>
+                            <span>Merkez</span></a></li>
+                    <li><a href="#"><span>
+                                <div>
+                                    <svg class="icon icon-home-m">
+                                        <use xlink:href="/images/icons/icons.svg#icon-home-m"></use>
+                                    </svg>
+                                </div>
+                                <p> Evin alanı</p>
+                            </span>
+                            <span>250 m2</span></a></li>
+                    <li><a href="#"><span>
+                                <div> <svg class="icon icon-Group-784">
+                                        <use xlink:href="/images/icons/icons.svg#icon-Group-784"></use>
+                                    </svg></div>
+                                <p>İnşa yılı</p>
+                            </span>
+                            <span>2019</span></a></li>
+                    <li><a href="#"><span>
+                                <div> <svg class="icon icon-office">
+                                        <use xlink:href="/images/icons/icons.svg#icon-office"></use>
+                                    </svg></div>
+                                <p> Kat</p>
+                            </span>
+                            <span>4/16</span></a></li>
+                    <li><a href="#"><span>
+                                <div> <svg class="icon icon-Group-684">
+                                        <use xlink:href="/images/icons/icons.svg#icon-Group-684"></use>
+                                    </svg></div>
+                                <p> Oda sayı</p>
+                            </span>
+                            <span>3+1</span></a></li>
+                    <li><a href="#"><span>
+                                <div><svg class="icon icon-sun-umbrella">
+                                        <use xlink:href="/images/icons/icons.svg#icon-sun-umbrella"></use>
+                                    </svg></div>
+                                <p> Denize mesafe</p>
+                            </span>
+                            <span>7 kilometre</span></a></li>
+                    <li><a href="#"><span>
+                                <div> <svg class="icon icon-bathtub">
+                                        <use xlink:href="/images/icons/icons.svg#icon-bathtub"></use>
+                                    </svg></div>
+                                <p> WC sayı</p>
+                            </span>
+                            <span>1 aded</span></a></li>
+                </ul>
             </div>
-            <div class="portfolio-main-right"></div>
+            <div class="portfolio-main-right">
+                <div class="portfolio-form">
+                    <h4>Görme taleb etmek için lütfen
+                        adınızı ve numaranızı yazın</h4>
+                    <form action="">
+                        <input type="name" class="form-control" placeholder="Adınız">
+                        <input type="username" class="form-control" placeholder="Telefon numaranızı yazın">
+                        <button type="submit" class="btn btn-primary">Göndər<svg class="icon icon-arrow-right">
+                                <use xlink:href="/images/icons/icons.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="portfolio-form">
+                    <h4>Çevrimiçi dönüştürücü</h4>
+                    <form action="">
+                        <div class="form-item">
+                            <input type="name" class="form-control" placeholder="150.000">
+                            <select class="js-example-basic-single" name="state">
+                                <!-- <option value="1">
+                                    <svg>
+                                        <use xlink:href="/images/icons/icons.svg#icon-tl"></use>
+                                    </svg>
+                                </option> -->
+                                <option value="2">$</option>
+                                <option value="3">$</option>
+                            </select>
+                        </div>
+                        <div class="form-item">
+                            <input type="username" class="form-control" placeholder="18955,15">
+                            <select class="js-example-basic-single" name="state">
+                                <option value="1">$</option>
+                                <option value="1">$</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Göndər<svg class="icon icon-arrow-right">
+                                <use xlink:href="/images/icons/icons.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <ul class="live__chat__btns">
+                    <li class="chat__btn">
+                        <p>Çağrı merkezi
+                            ile iletişim</p>
+                        <button class="live__chat">
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="images/icons/icons.svg#icon-live-chat"></use>
+                                </svg>
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
+    <!-- google map popup start -->
+    <div id="pop1" class="cd-popup" role="alert">
+        <div class="cd-popup-container">
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=Antalya&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                        scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        href="https://www.whatismyip-address.com/divi-discount/"></a><br>
+                </div>
+            </div>
+            <a href="#0" class="cd-popup-close"></a>
+        </div>
+    </div>
+    <!-- google map popup end -->
+    <!-- video popup start -->
+    <div id="pop2" class="cd-popup" role="alert">
+        <div class="cd-popup-container">
+            <div class="mapouter">
+                <div class="video__item">
+                    <div class="video__item--img">
+                        <video id="home-video" controls="" class="video" width="600" style="z-index: 1; opacity: 1;">
+                            <source
+                                src="https://riverisland.scene7.com/is/content/RiverIsland/c20171205_Original_Penguin_AW17_Video"
+                                type="video/mp4">
+                            <source
+                                src="https://riverisland.scene7.com/is/content/RiverIsland/c20171205_Original_Penguin_AW17_Video_OGG">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <a href="#0" class="cd-popup-close" id="pop2-close"></a>
+        </div>
+    </div>
+    <!-- video popup end -->
+    <div class="portfolio-info">
+        <section>
+            <div class="portfolio-explanation container">
+                <div class="explanation-text">
+                    <h6>Açıqlama</h6>
+                    <p>Lüks daireler Kepez, Gülveren Mahallesi’nde yer almaktadır. Kentsel dönüşüm faaliyetleriyle hızla
+                        büyüyerek yatırımcıları ve alıcıları kendine çeken bölge, yüksek yatırım fırsatları ve uygun
+                        fiyatları
+                        sayesinde bir cazibe merkezi haline gelmiştir. Bu bölge şehir merkezine, sosyal imkanlara ve
+                        denize
+                        olan
+                        yakınlığı sayesinde tercih edilmektedir. <a href="#">Daha fazla<svg
+                                class="icon icon-arrow-right">
+                                <use xlink:href="/images/icons/icons.svg#icon-arrow-right"></use>
+                            </svg></a></p>
+                </div>
+                <div class="explanation-list">
+                    <h6>Emlak hakkında ilave özellikler</h6>
+                    <div class="lists">
+                        <ul>
+                            <li><a href="#"> <svg class="icon icon-checked">
+                                        <use xlink:href="/images/icons/icons.svg#icon-checked"></use>
+                                    </svg>Sauna</a></li>
+                            <li><a href="#"><svg class="icon icon-checked">
+                                        <use xlink:href="/images/icons/icons.svg#icon-checked"></use>
+                                    </svg>Asansör</a></li>
+                            <li><a href="#"><svg class="icon icon-checked">
+                                        <use xlink:href="/images/icons/icons.svg#icon-checked"></use>
+                                    </svg>Yüzme havuzu</a></li>
+                            <li><a href="#"><svg class="icon icon-checked">
+                                        <use xlink:href="/images/icons/icons.svg#icon-checked"></use>
+                                    </svg>Site içinde</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"> <svg class="icon icon-checked">
+                                        <use xlink:href="/images/icons/icons.svg#icon-checked"></use>
+                                    </svg>Site Görevlisi</a></li>
+                            <li><a href="#"><svg class="icon icon-checked">
+                                        <use xlink:href="/images/icons/icons.svg#icon-checked"></use>
+                                    </svg>Spor Salonu</a></li>
+                            <li><a href="#"><svg class="icon icon-checked">
+                                        <use xlink:href="/images/icons/icons.svg#icon-checked"></use>
+                                    </svg>Otopark (Kapalı)</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"> <svg class="icon icon-checked">
+                                        <use xlink:href="/images/icons/icons.svg#icon-checked"></use>
+                                    </svg>7/24 Güvenlik</a></li>
+                            <li><a href="#"><svg class="icon icon-checked">
+                                        <use xlink:href="/images/icons/icons.svg#icon-checked"></use>
+                                    </svg>Güvenlik Kamerası</a></li>
+                            <li><a href="#"><svg class="icon icon-checked">
+                                        <use xlink:href="/images/icons/icons.svg#icon-checked"></use>
+                                    </svg>Bahçe</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"> <svg class="icon icon-checked">
+                                        <use xlink:href="/images/icons/icons.svg#icon-checked"></use>
+                                    </svg>Duş</a></li>
+                            <li><a href="#"><svg class="icon icon-checked">
+                                        <use xlink:href="/images/icons/icons.svg#icon-checked"></use>
+                                    </svg>Ankastre Set</a></li>
+                            <li><a href="#"><svg class="icon icon-checked">
+                                        <use xlink:href="/images/icons/icons.svg#icon-checked"></use>
+                                    </svg>Balkon</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"> <svg class="icon icon-checked">
+                                        <use xlink:href="/images/icons/icons.svg#icon-checked"></use>
+                                    </svg>Amerikan Mutfak</a></li>
+                            <li><a href="#"><svg class="icon icon-checked">
+                                        <use xlink:href="/images/icons/icons.svg#icon-checked"></use>
+                                    </svg>Ayrı Mutfak</a></li>
+                            <li><a href="#"><svg class="icon icon-checked">
+                                        <use xlink:href="/images/icons/icons.svg#icon-checked"></use>
+                                    </svg>Havaalanına (0-50 km.)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="portfolio-announcement container">
+                <div class="title">
+                    <h1>
+                        Benzer ilanlar
+                    </h1>
+                    <h2>Benzer ilanlar</h2>
+                </div>
+                <div class="portfolio__bottom tab-content" id="nav-tabContent">
+                    <div class="houses houses__grid__view tab-pane  show active" id="nav-home" role="tabpanel"
+                        aria-labelledby="nav-home-tab">
+                        <div class="house__item house__item__active">
+                            <div class="img__holder">
+                                <img src="images/portfolio/panoramic-view-apartments-with-shopping-street-in-antalya-interior-015.png"
+                                    alt="">
+                                <div class="img__info">
+                                    <div class="bookmark">
+                                        <div class="ribbon__svg">
+                                            <svg>
+                                                <use xlink:href="images/icons/icons.svg#icon-Union-1">
+
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="price__info">
+                                            <h6>Satılık</h6>
+                                            <h5 class="sale__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                            <h5 class="old__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <svg>
+                                        <use xlink:href="images/icons/icons.svg#icon-save-star"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+
+                            <div class="house__info">
+                                <div class="place">
+                                    <h5>
+                                        Antalya merkez
+                                    </h5>
+                                    <h6>
+                                        Villa
+                                        <svg>
+                                            <use xlink:href="images/icons/icons.svg#icon-villa"></use>
+                                        </svg>
+                                    </h6>
+                                </div>
+                                <div class="details">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-furniture"></use>
+                                                </svg>
+                                                Oda sayı
+                                            </span>
+                                            <h6>2+1</h6>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-plans"></use>
+                                                </svg>
+                                                Evin alanı
+                                            </span>
+
+                                            <h6>250 m<sup>2</sup></h6>
+
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="house__item">
+                            <div class="img__holder">
+                                <img src="images/portfolio/MaskGroup8.png" alt="">
+                                <div class="img__info">
+                                    <div class="bookmark">
+                                        <div class="ribbon__svg">
+                                            <svg>
+                                                <use xlink:href="images/icons/icons.svg#icon-Union-1">
+
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="price__info">
+                                            <h6>Satılık</h6>
+                                            <h5 class="sale__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                            <h5 class="old__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <svg>
+                                        <use xlink:href="images/icons/icons.svg#icon-save-star"></use>
+                                    </svg>
+                                </div>
+
+                            </div>
+                            <div class="house__info">
+                                <div class="place">
+                                    <h5>
+                                        Konyaaltı Hurma
+                                    </h5>
+                                    <h6>
+                                        Villa
+                                        <svg>
+                                            <use xlink:href="images/icons/icons.svg#icon-villa"></use>
+                                        </svg>
+                                    </h6>
+                                </div>
+                                <div class="details">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-furniture"></use>
+                                                </svg>
+                                                Oda sayı
+                                            </span>
+                                            <h6>2+1</h6>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-plans"></use>
+                                                </svg>
+                                                Evin alanı
+                                            </span>
+
+                                            <h6>250 m<sup>2</sup></h6>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="house__item">
+                            <div class="img__holder">
+                                <img src="images/portfolio/luxury-duplex-apartment-in-a-fast-growing-region-in-antalya-general-002.png"
+                                    alt="" srcset="">
+                                <div class="img__info">
+                                    <div class="bookmark">
+                                        <div class="ribbon__svg">
+                                            <svg>
+                                                <use xlink:href="images/icons/icons.svg#icon-Union-1">
+
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="price__info">
+                                            <h6>Satılık</h6>
+                                            <h5 class="sale__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                            <h5 class="old__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <svg>
+                                        <use xlink:href="images/icons/icons.svg#icon-save-star"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="house__info">
+                                <div class="place">
+                                    <h5>
+                                        Aksu
+                                    </h5>
+                                    <h6>
+                                        Villa
+                                        <svg>
+                                            <use xlink:href="images/icons/icons.svg#icon-villa"></use>
+                                        </svg>
+                                    </h6>
+                                </div>
+                                <div class="details">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-furniture"></use>
+                                                </svg>
+                                                Oda sayı
+                                            </span>
+                                            <h6>2+1</h6>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-plans"></use>
+                                                </svg>
+                                                Evin alanı
+                                            </span>
+
+                                            <h6>250 m<sup>2</sup></h6>
+
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="house__item">
+                            <div class="img__holder">
+                                <img src="images/portfolio/furnished-villa-for-sale-in-belek-in-the-complex-009.png"
+                                    alt="">
+                                <div class="img__info">
+                                    <div class="bookmark">
+                                        <div class="ribbon__svg">
+                                            <svg>
+                                                <use xlink:href="images/icons/icons.svg#icon-Union-1">
+
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="price__info">
+                                            <h6>Satılık</h6>
+                                            <h5 class="sale__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                            <h5 class="old__price">
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-tl"></use>
+                                                </svg>
+                                                1.500.00
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <svg>
+                                        <use xlink:href="images/icons/icons.svg#icon-save-star"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="house__info">
+                                <div class="place">
+                                    <h5>
+                                        Muratpaşa
+                                    </h5>
+                                    <h6>
+                                        Villa
+                                        <svg>
+                                            <use xlink:href="images/icons/icons.svg#icon-villa"></use>
+                                        </svg>
+                                    </h6>
+                                </div>
+                                <div class="details">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-furniture"></use>
+                                                </svg>
+                                                Oda sayı
+                                            </span>
+                                            <h6>2+1</h6>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <svg>
+                                                    <use xlink:href="images/icons/icons.svg#icon-plans"></use>
+                                                </svg>
+                                                Evin alanı
+                                            </span>
+
+                                            <h6>250 m<sup>2</sup></h6>
+
+
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="portfolio-announcement-more">Hepsine bak <img src="images/arrow-right.svg"
+                        alt=""></a>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer-item">
+                    <div class="footer-logo">
+                        <img src="images/logo-footer.png" alt="">
+                    </div>
+                    <div class="footer-text">
+                        <p>Antalya property No11111 nnumarasıyla Türkiye kanunları çerçevesinde,bünyesinde barındırdığı
+                            gayrimenkul eğitimli danışmanlarıyla hizmet vermektedir</p>
+                    </div>
+                    <div class="footer-copyright">
+                        <span>© Copyright Antalya Property Ltd 2020</span>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <ul class="footer-list">
+                        <li><a href="index.html">Ana sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="portfolio.html">Portföy</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h6>İletişime geç</h6>
+                    <ul class="footer-contacts">
+                        <li><a href="#"><svg class="icon icon-place">
+                                    <use xlink:href="/images/icons/icons.svg#icon-place"></use>
+                                </svg>Fatih, Esenler , İstanbul</a></li>
+                        <li><svg class="icon icon-email">
+                                <use xlink:href="/images/icons/icons.svg#icon-email"></use>
+                            </svg><a href="#">Info@antalyaproperty.tr</a></li>
+                        <li><svg class="icon icon-phone-call">
+                                <use xlink:href="/images/icons/icons.svg#icon-phone-call"></use>
+                            </svg><span>
+                                <a href="#">9020 7837 6433</a>
+                                <a href="#">9045 6434 6433</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h6>Bizi buradan izleyin</h6>
+                    <ul class="footer-social">
+                        <li><a href="#"><svg class="icon icon-instagram">
+                                    <use xlink:href="/images/icons/icons.svg#icon-instagram"></use>
+                                </svg></a></li>
+                        <li><a href="#"><svg class="icon icon-facebook">
+                                    <use xlink:href="/images/icons/icons.svg#icon-facebook">
+                                    </use>
+                                </svg></a></li>
+                        <li><a href="#"><svg class="icon icon-linkedin">
+                                    <use xlink:href="/images/icons/icons.svg#icon-linkedin">
+                                    </use>
+                                </svg></a></li>
+                        <li><a href="#"><svg class="icon icon-twitter">
+                                    <use xlink:href="/images/icons/icons.svg#icon-twitter">
+                                    </use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/js/lightgallery.min.js"></script>
 <script src="js/lightslider.js"></script>
+<script src="js/lightGallery.js"></script>
 <script src="js/portfolio-main.js"></script>
 
 </html>

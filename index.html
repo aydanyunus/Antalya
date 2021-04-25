@@ -151,227 +151,267 @@
                     <li class="nav-item nav-item-filter-1">
                         <a class="nav-link active" data-toggle="tab" href="#filtre">Filtre</a>
                     </li>
-                    <li class="nav-item nav-item-filter-2">
+                    <li class="nav-item nav-item-filter-1">
                         <a class="nav-link" data-toggle="tab" href="#morefiltre">Gelişmiş filtre</a>
+                    </li>
+                    <li class="nav-item nav-item-filter-2">
+                        <a class="nav-link" data-toggle="tab" href="#searchwithid">Id ile ara</a>
                     </li>
                 </ul>
                 <!-- Tab panes -->
                 <div class="tab-content">
                     <div id="filtre" class="container tab-pane active">
                         <div class="filters">
-                            <select class="js-example-basic-single" name="state">
-                                <option value="1">konum</option>
-                                <option value="1">Antalya merkez</option>
-                                <option value="2">Aksu</option>
-                                <option value="3">Muratpaşa</option>
-                                <option value="4">Döşemealtı</option>
-                                <option value="5">Konyaaltı Hurma</option>
-                                <option value="6">Kızılarık</option>
-                                <option value="6">Lara</option>
-                                <option value="1">Antalya merkez</option>
-                                <option value="2">Aksu</option>
-                                <option value="3">Muratpaşa</option>
-                                <option value="4">Döşemealtı</option>
-                                <option value="5">Konyaaltı Hurma</option>
-                                <option value="6">Kızılarık</option>
-                                <option value="6">Lara</option>
-                                <option value="1">Antalya merkez</option>
-                                <option value="2">Aksu</option>
-                                <option value="3">Muratpaşa</option>
-                                <option value="4">Döşemealtı</option>
-                                <option value="5">Konyaaltı Hurma</option>
-                                <option value="6">Kızılarık</option>
-                                <option value="6">Lara</option>
-                                <option value="6">Lara</option>
-                                <option value="1">Antalya merkez</option>
-                                <option value="2">Aksu</option>
-                                <option value="3">Muratpaşa</option>
-                                <option value="4">Döşemealtı</option>
-                                <option value="5">Konyaaltı Hurma</option>
-                                <option value="6">Kızılarık</option>
-                                <option value="6">Lara</option>
-                            </select>
-                            <select class="js-example-basic-single" name="state">
-                                <option value="1">Emlak türü</option>
-                                <option value="2">Aksu</option>
-                                <option value="3">Muratpaşa</option>
-                                <option value="4">Döşemealtı</option>
-                                <option value="5">Konyaaltı Hurma</option>
-                                <option value="6">Kızılarık</option>
-                                <option value="6">Lara</option>
-                                <option value="6">Lara</option>
-                                <option value="1">Antalya merkez</option>
-                                <option value="2">Aksu</option>
-                                <option value="3">Muratpaşa</option>
-                                <option value="4">Döşemealtı</option>
-                                <option value="5">Konyaaltı Hurma</option>
-                                <option value="6">Kızılarık</option>
-                                <option value="6">Lara</option>
-                            </select>
-                            <div class="dropdown dropdown-range-price">
-                                <a onclick="return false;" class="btn btn-secondary dropdown-toggle" href="#"
-                                    role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    Fiyat aralığı
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a onclick="return false;" class="dropdown-item" href="">
-                                        <div class="slider-range-prices">
-                                            <div>
-                                                <svg>
-                                                    <use xlink:href="/images/icons/icons.svg#icon-tl"></use>
-                                                </svg>
-                                                <input type="text" class="amount-index-1" readonly>
-                                            </div>
-                                            <div><svg>
-                                                    <use xlink:href="/images/icons/icons.svg#icon-tl"></use>
-                                                </svg> <input type="text" class="amount-index-2" readonly></div>
-
-                                        </div>
-                                        <div class="slider-range-index" id="ui-horizontal">
-                                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
-                                                <input type="text" class="amount-index-1" readonly>
-                                            </span>
-                                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
-                                                <input type="text" class="amount-index-2" readonly>
-                                            </span>
-                                        </div>
+                            <form action="">
+                                <select class="js-example-basic-single" name="state">
+                                    <option value="1">konum</option>
+                                    <option value="1">Antalya merkez</option>
+                                    <option value="2">Aksu</option>
+                                    <option value="3">Muratpaşa</option>
+                                    <option value="4">Döşemealtı</option>
+                                    <option value="5">Konyaaltı Hurma</option>
+                                    <option value="6">Kızılarık</option>
+                                    <option value="6">Lara</option>
+                                    <option value="1">Antalya merkez</option>
+                                    <option value="2">Aksu</option>
+                                    <option value="3">Muratpaşa</option>
+                                    <option value="4">Döşemealtı</option>
+                                    <option value="5">Konyaaltı Hurma</option>
+                                    <option value="6">Kızılarık</option>
+                                    <option value="6">Lara</option>
+                                    <option value="1">Antalya merkez</option>
+                                    <option value="2">Aksu</option>
+                                    <option value="3">Muratpaşa</option>
+                                    <option value="4">Döşemealtı</option>
+                                    <option value="5">Konyaaltı Hurma</option>
+                                    <option value="6">Kızılarık</option>
+                                    <option value="6">Lara</option>
+                                    <option value="6">Lara</option>
+                                    <option value="1">Antalya merkez</option>
+                                    <option value="2">Aksu</option>
+                                    <option value="3">Muratpaşa</option>
+                                    <option value="4">Döşemealtı</option>
+                                    <option value="5">Konyaaltı Hurma</option>
+                                    <option value="6">Kızılarık</option>
+                                    <option value="6">Lara</option>
+                                </select>
+                                <select class="js-example-basic-single" name="state">
+                                    <option value="1">Emlak türü</option>
+                                    <option value="2">Aksu</option>
+                                    <option value="3">Muratpaşa</option>
+                                    <option value="4">Döşemealtı</option>
+                                    <option value="5">Konyaaltı Hurma</option>
+                                    <option value="6">Kızılarık</option>
+                                    <option value="6">Lara</option>
+                                    <option value="6">Lara</option>
+                                    <option value="1">Antalya merkez</option>
+                                    <option value="2">Aksu</option>
+                                    <option value="3">Muratpaşa</option>
+                                    <option value="4">Döşemealtı</option>
+                                    <option value="5">Konyaaltı Hurma</option>
+                                    <option value="6">Kızılarık</option>
+                                    <option value="6">Lara</option>
+                                </select>
+                                <div class="dropdown dropdown-range-price">
+                                    <a onclick="return false;" class="btn btn-secondary dropdown-toggle" href="#"
+                                        role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Fiyat aralığı
                                     </a>
-                                    <a href="#" class="dropdown-price-button">Onayla</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a onclick="return false;" class="dropdown-item" href="">
+                                            <div class="slider-range-prices">
+                                                <div>
+                                                    <svg>
+                                                        <use xlink:href="/images/icons/icons.svg#icon-tl"></use>
+                                                    </svg>
+                                                    <input type="text" class="amount-index-1" readonly>
+                                                </div>
+                                                <div><svg>
+                                                        <use xlink:href="/images/icons/icons.svg#icon-tl"></use>
+                                                    </svg> <input type="text" class="amount-index-2" readonly></div>
+
+                                            </div>
+                                            <div class="slider-range-index" id="ui-horizontal">
+                                                <span tabindex="0"
+                                                    class="ui-slider-handle ui-corner-all ui-state-default">
+                                                    <input type="text" class="amount-index-1" readonly>
+                                                </span>
+                                                <span tabindex="0"
+                                                    class="ui-slider-handle ui-corner-all ui-state-default">
+                                                    <input type="text" class="amount-index-2" readonly>
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="dropdown-price-button">Onayla</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <input type="text" class="form-control form-input"
-                                placeholder="Aradığınız emlakın ID-sini girin">
-                            <div class="search"><a href="#"><img src="images/search.svg" alt=""></a></div>
+                                <input type="text" class="form-control form-input"
+                                    placeholder="Aradığınız emlakın ID-sini girin">
+                                <button class="search-submit" type="submit"><img src="images/search.svg"
+                                        alt=""></button>
+                            </form>
                         </div>
                     </div>
                     <div id="morefiltre" class="container tab-pane fade">
                         <div class="filters">
-                            <select class="js-example-basic-single" name="state">
-                                <option value="1">konum</option>
-                                <option value="1">Antalya merkez</option>
-                                <option value="2">Aksu</option>
-                                <option value="3">Muratpaşa</option>
-                                <option value="4">Döşemealtı</option>
-                            </select>
-                            <select class="js-example-basic-single" name="state">
-                                <option value="1">Emlak türü</option>
-                                <option value="2">Aksu</option>
-                                <option value="3">Muratpaşa</option>
-                                <option value="4">Döşemealtı</option>
-                                <option value="5">Konyaaltı Hurma</option>
-                                <option value="6">Kızılarık</option>
-                                <option value="6">Lara</option>
-                                <option value="6">Lara</option>
-                                <option value="1">Antalya merkez</option>
-                                <option value="2">Aksu</option>
-                                <option value="3">Muratpaşa</option>
-                                <option value="4">Döşemealtı</option>
-                                <option value="5">Konyaaltı Hurma</option>
-                                <option value="6">Kızılarık</option>
-                                <option value="6">Lara</option>
-                            </select>
-                            <select class="js-example-basic-single" name="state">
-                                <option value="1">Emlak türü</option>
-                                <option value="2">Aksu</option>
-                                <option value="3">Muratpaşa</option>
-                                <option value="4">Döşemealtı</option>
-                                <option value="5">Konyaaltı Hurma</option>
-                            </select>
-                            <div class="dropdown dropdown-range-price">
-                                <a onclick="return false;" class="btn btn-secondary dropdown-toggle" href="#"
-                                    role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    Fiyat aralığı
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a onclick="return false;" class="dropdown-item" href="">
-                                        <div class="slider-range-prices">
-                                            <div>
-                                                <svg>
-                                                    <use xlink:href="/images/icons/icons.svg#icon-tl"></use>
-                                                </svg>
-                                                <input type="text" class="amount-index-1" readonly>
-                                            </div>
-                                            <div><svg>
-                                                    <use xlink:href="/images/icons/icons.svg#icon-tl"></use>
-                                                </svg> <input type="text" class="amount-index-2" readonly></div>
-
-                                        </div>
-                                        <div class="slider-range-index" id="ui-horizontal">
-                                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
-                                                <input type="text" class="amount-index-1" readonly>
-                                            </span>
-                                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
-                                                <input type="text" class="amount-index-2" readonly>
-                                            </span>
-                                        </div>
+                            <form action="">
+                                <select class="js-example-basic-single" name="state">
+                                    <option value="1">konum</option>
+                                    <option value="1">Antalya merkez</option>
+                                    <option value="2">Aksu</option>
+                                    <option value="3">Muratpaşa</option>
+                                    <option value="4">Döşemealtı</option>
+                                </select>
+                                <select class="js-example-basic-single" name="state">
+                                    <option value="1">Emlak tipi</option>
+                                    <option value="2">Aksu</option>
+                                    <option value="3">Muratpaşa</option>
+                                    <option value="4">Döşemealtı</option>
+                                    <option value="5">Konyaaltı Hurma</option>
+                                    <option value="6">Kızılarık</option>
+                                    <option value="6">Lara</option>
+                                    <option value="6">Lara</option>
+                                    <option value="1">Antalya merkez</option>
+                                    <option value="2">Aksu</option>
+                                    <option value="3">Muratpaşa</option>
+                                    <option value="4">Döşemealtı</option>
+                                    <option value="5">Konyaaltı Hurma</option>
+                                    <option value="6">Kızılarık</option>
+                                    <option value="6">Lara</option>
+                                </select>
+                                <select class="js-example-basic-single" name="state">
+                                    <option value="1">Emlak türü</option>
+                                    <option value="2">Aksu</option>
+                                    <option value="3">Muratpaşa</option>
+                                    <option value="4">Döşemealtı</option>
+                                    <option value="5">Konyaaltı Hurma</option>
+                                </select>
+                                <div class="dropdown dropdown-range-price morefilter-range1">
+                                    <a onclick="return false;" class="btn btn-secondary dropdown-toggle" href="#"
+                                        role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Fiyat aralığı
                                     </a>
-                                    <a href="#" class="dropdown-price-button">Onayla</a>
-                                </div>
-                            </div>
-                            <div class="dropdown dropdown-room">
-                                <a onclick="return false;" class="btn btn-secondary dropdown-toggle" href="#"
-                                    role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    Oda Sayı
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <div class="dropdown-menu-rooms">
-                                        <a class="dropdown-item" href="" onclick="return false;">
-                                            2+1
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a onclick="return false;" class="dropdown-item" href="">
+                                            <div class="slider-range-prices">
+                                                <div>
+                                                    <svg>
+                                                        <use xlink:href="/images/icons/icons.svg#icon-tl"></use>
+                                                    </svg>
+                                                    <input type="text" class="amount-index-1" readonly>
+                                                </div>
+                                                <div><svg>
+                                                        <use xlink:href="/images/icons/icons.svg#icon-tl"></use>
+                                                    </svg> <input type="text" class="amount-index-2" readonly></div>
+
+                                            </div>
+                                            <div class="slider-range-index" id="ui-horizontal">
+                                                <span tabindex="0"
+                                                    class="ui-slider-handle ui-corner-all ui-state-default">
+                                                    <input type="text" class="amount-index-1" readonly>
+                                                </span>
+                                                <span tabindex="0"
+                                                    class="ui-slider-handle ui-corner-all ui-state-default">
+                                                    <input type="text" class="amount-index-2" readonly>
+                                                </span>
+                                            </div>
                                         </a>
-                                        <a class="dropdown-item dropdown-item-active" href="" onclick="return false;">
-                                            2+1
-                                        </a>
-                                        <a class="dropdown-item" href="" onclick="return false;">
-                                            2+1
-                                        </a>
-                                        <a class="dropdown-item" href="" onclick="return false;">
-                                            2+1
-                                        </a>
-                                        <a class="dropdown-item" href="" onclick="return false;">
-                                            2+1
-                                        </a>
+                                        <a href="#" class="dropdown-price-button">Onayla</a>
                                     </div>
-                                    <a onclick="return false;" class="dropdown-room-submit" href="#">Onayla</a>
                                 </div>
-                            </div>
-                            <div class="dropdown dropdown-range-price">
-                                <a onclick="return false;" class="btn btn-secondary dropdown-toggle" href="#"
-                                    role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    Metre Kare
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a onclick="return false;" class="dropdown-item" href="">
-                                        <div class="slider-range-prices">
-                                            <div>
-                                                <svg>
-                                                    <use xlink:href="/images/icons/icons.svg#icon-tl"></use>
-                                                </svg>
-                                                <input type="text" class="amount-index-1" readonly>
-                                            </div>
-                                            <div><svg>
-                                                    <use xlink:href="/images/icons/icons.svg#icon-tl"></use>
-                                                </svg> <input type="text" class="amount-index-2" readonly></div>
-
-                                        </div>
-                                        <div class="slider-range-index" id="ui-horizontal">
-                                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
-                                                <input type="text" class="amount-index-1" readonly>
-                                            </span>
-                                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
-                                                <input type="text" class="amount-index-2" readonly>
-                                            </span>
-                                        </div>
+                                <div class="dropdown dropdown-room">
+                                    <a onclick="return false;" class="btn btn-secondary dropdown-toggle" href="#"
+                                        role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Oda Sayı
                                     </a>
-                                    <a href="#" class="dropdown-price-button">Onayla</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <div class="dropdown-menu-rooms">
+                                            <div class="rooms--item">
+                                                <input type="radio" name="user_type" value="1" checked="">
+                                                <div class="rooms--item-in">
+                                                    2+1
+                                                </div>
+                                            </div>
+                                            <div class="rooms--item">
+                                                <input type="radio" name="user_type" value="1">
+                                                <div class="rooms--item-in">
+                                                    2+1
+                                                </div>
+                                            </div>
+                                            <div class="rooms--item">
+                                                <input type="radio" name="user_type" value="1">
+                                                <div class="rooms--item-in">
+                                                    2+1
+                                                </div>
+                                            </div>
+                                            <div class="rooms--item">
+                                                <input type="radio" name="user_type" value="1">
+                                                <div class="rooms--item-in">
+                                                    2+1
+                                                </div>
+                                            </div>
+                                            <div class="rooms--item">
+                                                <input type="radio" name="user_type" value="1" s>
+                                                <div class="rooms--item-in">
+                                                    2+1
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a onclick="return false;" class="dropdown-room-submit" href="#">Onayla</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <input type="text" class="form-control form-input"
-                                placeholder="Aradığınız emlakın ID-sini girin">
-                            <div class="search"><a href="#"><img src="images/search.svg" alt=""></a></div>
+                                <div class="dropdown dropdown-range-price morefilter-range2">
+                                    <a onclick="return false;" class="btn btn-secondary dropdown-toggle" href="#"
+                                        role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Metre Kare
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a onclick="return false;" class="dropdown-item" href="">
+                                            <div class="slider-range-prices">
+                                                <div>
+                                                    <svg>
+                                                        <use xlink:href="/images/icons/icons.svg#icon-tl"></use>
+                                                    </svg>
+                                                    <input type="text" class="amount-index-1" readonly>
+                                                </div>
+                                                <div><svg>
+                                                        <use xlink:href="/images/icons/icons.svg#icon-tl"></use>
+                                                    </svg> <input type="text" class="amount-index-2" readonly></div>
+
+                                            </div>
+                                            <div class="slider-range-index" id="ui-horizontal">
+                                                <span tabindex="0"
+                                                    class="ui-slider-handle ui-corner-all ui-state-default">
+                                                    <input type="text" class="amount-index-1" readonly>
+                                                </span>
+                                                <span tabindex="0"
+                                                    class="ui-slider-handle ui-corner-all ui-state-default">
+                                                    <input type="text" class="amount-index-2" readonly>
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="dropdown-price-button">Onayla</a>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control form-input"
+                                    placeholder="Aradığınız emlakın ID-sini girin">
+                                <button class="search-submit" type="submit"><img src="images/search.svg"
+                                        alt=""></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="searchwithid" class="container tab-pane fade">
+                        <div class="filters">
+                            <form action="">
+                                <input type="text" class="form-control form-input"
+                                    placeholder="Aradığınız emlakın ID-sini girin">
+                                <button class="search-submit" type="submit"><img src="images/search.svg"
+                                        alt=""></button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -475,27 +515,36 @@
                             </div>
                         </div>
                         <div class="rooms">
-                            <h4>
-                                Oda sayı
-                            </h4>
-                            <div class="number__of__rooms">
-                                <span>
-                                    1+1
-                                </span>
-                                <span class="selected__room">
+                            <div class="rooms--item">
+                                <input type="radio" name="user_type" value="1" checked="">
+                                <div class="rooms--item-in">
                                     2+1
-                                </span>
-                                <span>
-                                    3+1
-                                </span>
-                                <span>
-                                    4+1
-                                </span>
-                                <span>
-                                    5+1
-                                </span>
+                                </div>
                             </div>
-
+                            <div class="rooms--item">
+                                <input type="radio" name="user_type" value="1">
+                                <div class="rooms--item-in">
+                                    2+1
+                                </div>
+                            </div>
+                            <div class="rooms--item">
+                                <input type="radio" name="user_type" value="1">
+                                <div class="rooms--item-in">
+                                    2+1
+                                </div>
+                            </div>
+                            <div class="rooms--item">
+                                <input type="radio" name="user_type" value="1">
+                                <div class="rooms--item-in">
+                                    2+1
+                                </div>
+                            </div>
+                            <div class="rooms--item">
+                                <input type="radio" name="user_type" value="1" s>
+                                <div class="rooms--item-in">
+                                    2+1
+                                </div>
+                            </div>
                         </div>
                         <div class="price__range">
                             <h4>Fiyat aralığı</h4>
@@ -532,126 +581,6 @@
                             </a>
                         </button>
                     </div>
-                    <!-- <div class="filter-items">
-                        <div class="item">
-                            <h5>
-                                Satılık
-                            </h5>
-                            <div>
-                                <svg>
-                                    <use xlink:href="/images/icons/icons.svg#icon-hotel"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <h5>
-                                Kiralık
-                            </h5>
-                            <div>
-                                <svg>
-                                    <use xlink:href="/images/icons/icons.svg#icon-office"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <h5>
-                                Kelepir
-                            </h5>
-                            <div>
-                                <svg>
-                                    <use xlink:href="/images/icons/icons.svg#icon-convenience-store"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <h5>
-                                Proje
-                            </h5>
-                            <div>
-                                <svg>
-                                    <use xlink:href="/images/icons/icons.svg#icon-house"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filter-place">
-                        <label for="">Konum</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Konum Seç</option>
-                            <option value="1">Baku</option>
-                            <option value="2">Turkiye</option>
-                            <option value="3">Baku</option>
-                        </select>
-                    </div>
-                    <div class="filter-place">
-                        <label for="">Konum</label>
-                        <div class="dropdown dropdown__property">
-                            <button class="btn btn__property dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Hepsi
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-property" aria-labelledby="dropdownMenuButton"
-                                style="">
-                                <a class="dropdown-item dropdown-item-property" href="#">
-                                    <svg>
-                                        <use xlink:href="images/icons/icons.svg#icon-condominium"></use>
-                                    </svg>
-                                    Daire
-                                </a>
-                                <a class="dropdown-item dropdown-item-property" href="#">
-                                    <svg>
-                                        <use xlink:href="images/icons/icons.svg#icon-home"></use>
-                                    </svg>
-                                    Villa</a>
-                                <a class="dropdown-item dropdown-item-property" href="#">
-                                    <svg>
-                                        <use xlink:href="images/icons/icons.svg#icon-placeholder"></use>
-                                    </svg>
-                                    Arsa</a>
-                                <a class="dropdown-item dropdown-item-property" href="#">
-                                    <svg>
-                                        <use xlink:href="images/icons/icons.svg#icon-condominium"></use>
-                                    </svg>
-                                    İşyeri</a>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filter-room">
-                        <div class="room-item">1+1</div>
-                        <div class="room-item">2+1</div>
-                        <div class="room-item">3+1</div>
-                        <div class="room-item">4+1</div>
-                        <div class="room-item">5+1</div>
-                    </div>
-                    <div class="filter-price">
-                        <label for="">Fiyat aralığı</label>
-                        <div class="slider-range-index" id="ui-horizontal">
-                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
-                                <input type="text" class="amount-index-1" readonly>
-                            </span>
-                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
-                                <input type="text" class="amount-index-2" readonly>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="filter-price">
-                        <label for="">M2</label>
-                        <div class="slider-range-index" id="ui-horizontal">
-                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
-                                <input type="text" class="amount-index-1" readonly>
-                            </span>
-                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
-                                <input type="text" class="amount-index-2" readonly>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="filter-id">
-                        <label for="">Emlad ID:</label>
-                        <input type="text" class="form-control" placeholder="Aradığınız emlakın ID-sini girin"
-                            aria-label="text" aria-describedby="basic-addon1">
-                    </div>
-                    <a href="#" class="filter-submit">Submit</a> -->
                 </form>
             </div>
             <ul class="live__chat__btns">
@@ -741,9 +670,6 @@
                 </div>
 
             </div>
-        </div>
-
-
         </div>
     </header>
     <!-- modal start-->
