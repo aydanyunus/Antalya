@@ -221,22 +221,11 @@
   height: 21px;
 }
 
-.portfolio-main-left .lSGallery {
-  width: 100% !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 10px;
-}
-
 .portfolio-main-left .lSGallery li {
   width: -webkit-fit-content !important;
   width: -moz-fit-content !important;
   width: fit-content !important;
-  margin-right: 15px !important;
+  margin-right: 18px !important;
 }
 
 .portfolio-main-left .lSGallery li img {
@@ -264,7 +253,7 @@
 
 .portfolio-main-left .lSGallery li:nth-child(8) {
   position: relative;
-  margin-right: 0 !important;
+  margin-right: 10px !important;
 }
 
 .portfolio-main-left .lSGallery li:nth-child(8)::before {
@@ -1130,7 +1119,7 @@
   height: 100%;
   background: url(../images/bgimgfor2.2.png);
   background-repeat: no-repeat;
-  z-index: 2;
+  z-index: -1;
   background-size: cover;
 }
 
@@ -1301,7 +1290,21 @@
   display: none !important;
 }
 
+.portfolio-main-right-responsive {
+  display: none;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  margin-left: -1px !important;
+}
+
 @media only screen and (max-width: 992px) {
+  .portfolio-main-right {
+    display: none;
+  }
+  .portfolio-main-right-responsive {
+    display: block;
+  }
   .portfolio-announcement .portfolio__bottom .houses.show.active {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1324,5 +1327,145 @@
   .portfolio-main-right {
     padding-left: 0;
   }
+  .portfolio-info::after {
+    content: "";
+    position: unset;
+  }
+  .portfolio-main-left .lSGallery {
+    display: -webkit-inline-box;
+  }
+  .portfolio-left-icons li {
+    width: 50%;
+    border-bottom: 2px solid #e4e4e4;
+    padding-bottom: 14px;
+    padding-top: 14px;
+  }
+  .portfolio-main-left .portfolio-left-icons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #online-modal .portfolio-form {
+    margin-bottom: unset;
+  }
+  #online-modal .modal-content {
+    border-radius: 12rem;
+  }
+  .portfolio-form .close {
+    top: 7px;
+    position: absolute;
+    right: 10px;
+  }
+  #online-modal .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    margin-left: 8px !important;
+  }
+  .overlay .overlay-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 20rem !important;
+  }
+  .overlay .overlay-bottom .overlay-bottom-buttons {
+    top: -14px !important;
+  }
+  #see-modal .modal-content {
+    border-radius: 12rem;
+  }
+  #see-modal .portfolio-form {
+    margin-bottom: unset;
+  }
+  #online-modal .modal-body {
+    padding: unset !important;
+  }
+  #online-modal .portfolio-main-right {
+    padding-top: unset !important;
+  }
+  #see-modal .portfolio-main-right {
+    padding-top: unset !important;
+  }
+  #see-modal .modal-body {
+    padding: unset !important;
+  }
+  .portfolio-main-right-responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .portfolio-main-right-responsive a {
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    padding: 10px 47px;
+    border-radius: 10px;
+    background-color: #3259fc;
+    color: #ffffff;
+    -webkit-box-shadow: 3px 1px 17px 1px #ccc;
+    box-shadow: 3px 1px 17px 1px #ccc;
+    margin-bottom: 14px;
+    width: 94%;
+    text-align: center;
+  }
+  .overlay-fullscreen {
+    position: absolute;
+    left: 15rem !important;
+    top: 22px !important;
+  }
+}
+
+#imageGallery1 {
+  display: none;
+}
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-trigger:before {
+  content: "Daha fazla";
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-trigger:before {
+  content: "Daha az";
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 0.5em;
+  color: #fb7d76;
+  font-size: 0.9em;
+  line-height: 2;
+  border-radius: 0.25em;
+}
+
+.read-more-trigger svg {
+  width: 42px;
+  height: 12px;
+  fill: #fb7d76;
 }
 /*# sourceMappingURL=portfolio-main.css.map */

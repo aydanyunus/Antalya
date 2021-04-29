@@ -2107,4 +2107,10 @@ footer .footer-item .footer-copyright {
       -ms-flex-align: center;
           align-items: center;
 }
+
+@media (min-width: 550px) and (max-width: 992px) {
+  footer::before {
+    background: unset;
+  }
+}
 /*# sourceMappingURL=style.css.map */

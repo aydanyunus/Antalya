@@ -30,6 +30,10 @@ a:hover {
   text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  height: 4px !important;
+}
+
 #about {
   background: url("../images/about/Group2200@2x.png");
   width: 100%;
@@ -239,6 +243,11 @@ a:hover {
           justify-content: space-between;
 }
 
+#who__are__we .item .left-last img,
+#who__are__we .item .left-first img {
+  margin-left: -42px;
+}
+
 #who__are__we .item .left {
   width: 50%;
   position: relative;
@@ -268,8 +277,8 @@ a:hover {
   top: 33px;
   left: 50px;
   border: none;
-  -webkit-box-shadow: 0px 15px 56px #000000;
-          box-shadow: 0px 15px 56px #000000;
+  -webkit-box-shadow: 0px 14px 20px 0px #8e808029;
+          box-shadow: 0px 14px 20px 0px #8e808029;
 }
 
 #who__are__we .item .left .card .card__left {
