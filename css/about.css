@@ -30,6 +30,10 @@ a:hover {
   text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  height: 4px !important;
+}
+
 #about {
   background: url("../images/about/Group2200@2x.png");
   width: 100%;
