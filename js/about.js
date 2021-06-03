@@ -82,3 +82,15 @@ for (let i = 0, len = btnTab.length; i < len; i++) {
 }
 
 tabCurrent(btnTab[indexOpen]);
+
+// staff 
+
+var memberLength= $('.member').length;
+
+if(memberLength > 6) {
+    console.log('clicked')
+    $('.staff__members').css('justifyContent', 'unset'),
+    $('.staff__members').css('display', '-webkit-box'),
+    $('.staff__members').css('overflow-x', 'scroll')
+    $('.member').css('marginRight', '50px')
+}
