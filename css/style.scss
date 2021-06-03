@@ -1819,3 +1819,8 @@ footer {
     align-items: center;
   }
 }
+@media (min-width: 550px) and (max-width: 992px) {
+  footer::before {
+    background: unset;
+  }
+}

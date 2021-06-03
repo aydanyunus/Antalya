@@ -1,30 +1,28 @@
 $(document).ready(function () {
   $("#imageGallery").lightSlider({
+    autoplay: false,
     gallery: true,
     item: 1,
-    loop: true,
-    thumbItem: 9,
+    thumbItem: 6,
+    galleryMargin: 17,
+    thumbMargin: 10,
     slideMargin: 0,
-    enableDrag: false,
-    currentPagerPosition: "left",
+    speed: 500,
+    pause: 5000,
+    auto: false,
+    loop: false,
   });
 });
 $(".icon-fullscreen").click(function () {
-  $("#imageGallery").lightGallery({
-    fullScreen: true,
-  });
+  $("#imageGallery").lightGallery({});
 });
-$(".full-home").click(function () {
-  $(".one").css("display", "none");
-  $(".two").css("display", "none");
-  $("#imageGallery").lightGallery({
-    fullScreen: true,
-  });
+$("#imageGallery li").click(function () {
+  $(".lg-backdrop.in").addClass("n");
+  $(".lg-outer.lg-visible").addClass("n");
 });
 $(document).ready(function () {
   $(".js-example-basic-single").select2();
 });
-
 jQuery(document).ready(function ($) {
   //close popup
   $(".cd-popup").on("click", function (event) {

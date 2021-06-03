@@ -171,7 +171,7 @@ a {
 }
 #who__are__we {
   padding: 24px 0 94px 0;
-  background: url('../images/about/Group112.png');
+  background: url("../images/about/Group112.png");
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -182,6 +182,12 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    .left-last,
+    .left-first {
+      img {
+        margin-left: -42px;
+      }
+    }
     .left {
       width: 50%;
       position: relative;
@@ -204,7 +210,7 @@ a {
         top: 33px;
         left: 50px;
         border: none;
-        box-shadow: 0px 15px 56px #000000;
+        box-shadow: 0px 14px 20px 0px #8e808029;
         .card__left {
           color: #001136;
           h2 {
@@ -342,6 +348,7 @@ a {
     }
   }
 }
+
 #video {
   width: 100%;
   .video__item--img {
@@ -497,8 +504,8 @@ a {
       display: block !important;
     }
   }
-  #who__are__we{
-    background: url('../images/about/Group113.png');
+  #who__are__we {
+    background: url("../images/about/Group113.png");
   }
 }
 @keyframes fadeIn {
